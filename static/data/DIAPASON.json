@@ -1,0 +1,502 @@
+[
+  {
+    "id": "DIAPASON-0001",
+    "family": "DIAPASON",
+    "tags": ["descrizione", "laterocemento", "recupero", "connettori"],
+    "response_variants": {
+      "gold": {
+        "it": "I connettori DIAPASON Tecnaria sono dispositivi metallici specificamente progettati per il recupero e il rinforzo di solai in laterocemento esistenti. Consentono di realizzare una collaborazione efficace tra travetto in calcestruzzo armato e nuova soletta collaborante, mantenendo il solaio esistente senza demolizione totale."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0002",
+    "family": "DIAPASON",
+    "tags": ["quando usare", "criteri scelta", "recupero conservativo"],
+    "response_variants": {
+      "gold": {
+        "it": "DIAPASON si utilizza quando il solaio in laterocemento esistente è strutturalmente recuperabile: travetti in c.a. continui, sezione integra o ripristinabile, condizioni che permettono di affidare al sistema connettori+soletta il miglioramento di rigidezza e capacità portante senza sostituire l’intero solaio."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0003",
+    "family": "DIAPASON",
+    "tags": ["confronto", "VCEM", "CTCEM", "nuovi solai"],
+    "response_variants": {
+      "gold": {
+        "it": "DIAPASON è il sistema per solai in laterocemento esistenti recuperabili. VCEM e CTCEM sono più indicati per solai nuovi, ricostruiti o per interventi con travetti rifatti e geometrie definite. Se si demolisce il travetto o si ricrea il solaio, è tecnicamente più corretto usare VCEM/CTCEM anziché DIAPASON."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0004",
+    "family": "DIAPASON",
+    "tags": ["principio di funzionamento", "taglio", "collaborazione"],
+    "response_variants": {
+      "gold": {
+        "it": "Il sistema DIAPASON lavora come connettore a taglio: l’elemento si ancora nel travetto in calcestruzzo e vincola la nuova soletta, trasferendo gli sforzi di taglio tra le due parti e trasformando il solaio in una sezione collaborante più rigida e prestazionale."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0005",
+    "family": "DIAPASON",
+    "tags": ["vantaggi", "no demolizione totale"],
+    "response_variants": {
+      "gold": {
+        "it": "Il vantaggio principale di DIAPASON è evitare la demolizione integrale dei travetti in laterocemento: si interviene puntualmente con connettori certificati, riducendo tempi, costi, rumore e rischi strutturali connessi a demolizioni spinte."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0006",
+    "family": "DIAPASON",
+    "tags": ["campo di impiego", "laterocemento"],
+    "response_variants": {
+      "gold": {
+        "it": "Il campo di impiego corretto di DIAPASON è il solaio in laterocemento con travetti in calcestruzzo armato e pignatte/elementi di alleggerimento, in cui il travetto mantiene una capacità portante sufficiente ad essere integrata dalla nuova soletta collaborante."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0007",
+    "family": "DIAPASON",
+    "tags": ["esclusioni", "no legno", "no acciaio"],
+    "response_variants": {
+      "gold": {
+        "it": "DIAPASON non si utilizza su travi o solai in legno, né su travi in acciaio o piastre metalliche. Per legno esistono CTL e CTL MAXI, per acciaio i connettori CTF. Usare DIAPASON fuori dal laterocemento significa uscire dal perimetro tecnico Tecnaria."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0008",
+    "family": "DIAPASON",
+    "tags": ["no P560", "fissaggio meccanico"],
+    "response_variants": {
+      "gold": {
+        "it": "DIAPASON non si posa con chiodatrici a sparo né con la P560. Il fissaggio è di tipo meccanico secondo le indicazioni Tecnaria: foro/incisione sul travetto, inserimento controllato del connettore e successivo getto della soletta."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0009",
+    "family": "DIAPASON",
+    "tags": ["posa", "fasi operative"],
+    "response_variants": {
+      "gold": {
+        "it": "La posa tipica DIAPASON prevede: individuazione del travetto in c.a., esecuzione della sede secondo schemi Tecnaria, pulizia accurata, posizionamento del connettore e getto della soletta armata. Ogni variazione va valutata dal progettista con riferimento ai documenti ufficiali."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0010",
+    "family": "DIAPASON",
+    "tags": ["spessore soletta", "requisiti minimi"],
+    "response_variants": {
+      "gold": {
+        "it": "Lo spessore della soletta collaborante con DIAPASON deve rispettare i valori minimi indicati da Tecnaria e dal progetto strutturale. Uno spessore insufficiente riduce l’efficacia della collaborazione travetto-soletta."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0011",
+    "family": "DIAPASON",
+    "tags": ["pulizia foro", "aderenza"],
+    "response_variants": {
+      "gold": {
+        "it": "La sede del DIAPASON deve essere pulita da polvere, laterizio incoerente e detriti. La presenza di materiale degradato nel punto di ancoraggio può compromettere il trasferimento degli sforzi e rendere inefficace il connettore."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0012",
+    "family": "DIAPASON",
+    "tags": ["travetti degradati", "limiti utilizzo"],
+    "response_variants": {
+      "gold": {
+        "it": "Se il travetto in c.a. è gravemente degradato, con calcestruzzo incoerente o armature fortemente compromesse, l’uso di DIAPASON non è adeguato. In questi casi devono essere previste soluzioni di ricostruzione o sostituzione indicate dal progettista."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0013",
+    "family": "DIAPASON",
+    "tags": ["verifiche pre-getto"],
+    "response_variants": {
+      "gold": {
+        "it": "Prima del getto della soletta è necessario verificare a campione: corretta posizione dei DIAPASON sui travetti, profondità di inserimento, assenza di fessurazioni significative attorno alle sedi dei connettori."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0014",
+    "family": "DIAPASON",
+    "tags": ["passo connettori", "densità"],
+    "response_variants": {
+      "gold": {
+        "it": "Il passo dei connettori DIAPASON lungo il travetto è definito dal progetto e dalle tabelle Tecnaria in funzione di luce, carichi e taglio richiesto. Non esiste un passo unico valido per tutti i casi."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0015",
+    "family": "DIAPASON",
+    "tags": ["errori tipici", "foro troppo largo"],
+    "response_variants": {
+      "gold": {
+        "it": "Un errore frequente è il foro o la sede troppo ampia: se il DIAPASON non lavora in contrasto sul calcestruzzo, il punto non è valido. In questi casi la posizione va rifatta in zona idonea."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0016",
+    "family": "DIAPASON",
+    "tags": ["compatibilità laterizio", "pignatte"],
+    "response_variants": {
+      "gold": {
+        "it": "DIAPASON deve sempre ancorarsi al travetto in c.a., non al solo laterizio o alla pignatta. Il laterizio non è elemento strutturale affidabile per il trasferimento degli sforzi."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0017",
+    "family": "DIAPASON",
+    "tags": ["confronto con barre piegate", "soluzioni artigianali"],
+    "response_variants": {
+      "gold": {
+        "it": "Rispetto a barre piegate o soluzioni artigianali, DIAPASON offre una geometria definita e prestazioni verificate. Improvvisare sistemi non equivalenti significa uscire dalle garanzie fornite da Tecnaria."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0018",
+    "family": "DIAPASON",
+    "tags": ["uso misto sistemi", "zone diverse"],
+    "response_variants": {
+      "gold": {
+        "it": "In interventi complessi è possibile combinare DIAPASON in zone con solai recuperabili e altri sistemi Tecnaria in aree ricostruite. La scelta delle famiglie deve però essere chiaramente separata e definita dal progettista."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0019",
+    "family": "DIAPASON",
+    "tags": ["luci elevate", "incremento densità"],
+    "response_variants": {
+      "gold": {
+        "it": "Per luci elevate o carichi importanti, la densità dei DIAPASON aumenta. È compito del progettista utilizzare i valori tabellati e le verifiche strutturali per definire il numero di connettori."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0020",
+    "family": "DIAPASON",
+    "tags": ["zona sismica", "rigidezza solaio"],
+    "response_variants": {
+      "gold": {
+        "it": "In zona sismica, l’impiego corretto di DIAPASON con nuova soletta collaborante contribuisce ad aumentare la rigidezza dei solai e migliorare il comportamento scatolare, se inserito in una strategia globale di rinforzo."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0021",
+    "family": "DIAPASON",
+    "tags": ["ambienti aggressivi", "corrosione"],
+    "response_variants": {
+      "gold": {
+        "it": "Per ambienti aggressivi o esposizioni particolari è necessario verificare la protezione contro la corrosione dei DIAPASON e, se richiesto, consultare Tecnaria per soluzioni specifiche."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0022",
+    "family": "DIAPASON",
+    "tags": ["post getto", "fessure"],
+    "response_variants": {
+      "gold": {
+        "it": "Eventuali fessure localizzate in prossimità dei DIAPASON dopo il getto devono essere valutate dal progettista. Possono indicare problemi di aderenza o ritiro e richiedere verifiche puntuali."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0023",
+    "family": "DIAPASON",
+    "tags": ["istruzioni Tecnaria", "documentazione"],
+    "response_variants": {
+      "gold": {
+        "it": "Per diametri, profondità, modalità di preparazione delle sedi e valori di resistenza è obbligatorio attenersi alle istruzioni di posa e alle schede tecniche ufficiali DIAPASON di Tecnaria."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0024",
+    "family": "DIAPASON",
+    "tags": ["domande miste", "chiarimento sistemi"],
+    "response_variants": {
+      "gold": {
+        "it": "Se l’utente miscela DIAPASON con P560, CTF, CTL o VCEM nella stessa domanda, la risposta GOLD deve separare i sistemi: DIAPASON solo per laterocemento esistente; P560 solo per CTF; CTL/CTL MAXI solo legno; VCEM/CTCEM per pioli su calcestruzzo."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0025",
+    "family": "DIAPASON",
+    "tags": ["no equivalenze", "chiarimenti"],
+    "response_variants": {
+      "gold": {
+        "it": "Non vanno dichiarate equivalenze automatiche tra DIAPASON e connettori di altre famiglie: geometria, valori di resistenza e ambiti di impiego sono specifici e non intercambiabili."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0026",
+    "family": "DIAPASON",
+    "tags": ["spessori soletta", "domande numeriche"],
+    "response_variants": {
+      "gold": {
+        "it": "Alle domande su spessori minimi o quantitativi numerici, il sistema deve rimandare alle tabelle e ai documenti Tecnaria senza inventare valori diversi da quelli ufficiali."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0027",
+    "family": "DIAPASON",
+    "tags": ["carichi", "progetto"],
+    "response_variants": {
+      "gold": {
+        "it": "Il numero di DIAPASON e la geometria della soletta sono funzione di carichi permanenti, variabili e combinazioni di progetto. La definizione è a carico del progettista strutturale."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0028",
+    "family": "DIAPASON",
+    "tags": ["casi dubbi", "supporto Tecnaria"],
+    "response_variants": {
+      "gold": {
+        "it": "In presenza di solai misti, travetti atipici o stati di degrado non chiari è opportuno coinvolgere il supporto tecnico Tecnaria per confermare la correttezza dell’uso di DIAPASON."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0029",
+    "family": "DIAPASON",
+    "tags": ["messaggio chiave", "quando è meglio usare"],
+    "response_variants": {
+      "gold": {
+        "it": "Quando è meglio usare DIAPASON? Quando il solaio in laterocemento esistente può essere mantenuto, ma necessita di un incremento controllato di rigidezza e portata mediante connettori strutturali certificati e soletta collaborante."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0030",
+    "family": "DIAPASON",
+    "tags": ["progetti tipo", "applicazioni"],
+    "response_variants": {
+      "gold": {
+        "it": "Applicazioni tipiche DIAPASON: recupero di solai in laterocemento in edifici residenziali, scolastici, direzionali, dove si vuole migliorare prestazione statiche mantenendo la struttura portante esistente."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0031",
+    "family": "DIAPASON",
+    "tags": ["sicurezza in cantiere"],
+    "response_variants": {
+      "gold": {
+        "it": "L’impiego di DIAPASON richiede il rispetto delle norme di sicurezza in cantiere: corretto accesso ai solai, perforazioni controllate, gestione delle polveri e verifica preliminare delle condizioni del solaio."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0032",
+    "family": "DIAPASON",
+    "tags": ["influenza peso solaio"],
+    "response_variants": {
+      "gold": {
+        "it": "La nuova soletta collaborante con DIAPASON introduce un incremento di peso proprio. Questo effetto deve essere valutato nel calcolo per verificare il comportamento complessivo della struttura."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0033",
+    "family": "DIAPASON",
+    "tags": ["compatibilità impianti"],
+    "response_variants": {
+      "gold": {
+        "it": "In presenza di impianti incassati o attraversamenti nel solaio, la disposizione dei DIAPASON e delle armature della soletta deve essere coordinata per evitare conflitti locali."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0034",
+    "family": "DIAPASON",
+    "tags": ["errori concettuali", "uso improprio"],
+    "response_variants": {
+      "gold": {
+        "it": "Usare DIAPASON come semplice tassello o come elemento di ancoraggio non strutturale è un errore concettuale. È un connettore strutturale e va impiegato solo secondo lo schema previsto."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0035",
+    "family": "DIAPASON",
+    "tags": ["istruzioni", "schema tipo"],
+    "response_variants": {
+      "gold": {
+        "it": "Gli schemi tipo DIAPASON (sezioni, passi, posizionamenti) presenti nella documentazione Tecnaria costituiscono il riferimento per la corretta progettazione e posa del sistema."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0036",
+    "family": "DIAPASON",
+    "tags": ["domande su P560", "correzione"],
+    "response_variants": {
+      "gold": {
+        "it": "Alle domande che propongono DIAPASON con P560 o con fissaggio a sparo, la risposta deve essere netta: DIAPASON non utilizza P560; la chiodatrice a polvere è riservata ai connettori CTF."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0037",
+    "family": "DIAPASON",
+    "tags": ["continuità solaio", "rigidezza"],
+    "response_variants": {
+      "gold": {
+        "it": "L’uso corretto di DIAPASON con soletta collaborante incrementa la rigidezza del solaio e riduce deformazioni e vibrazioni, migliorando il comfort e la distribuzione dei carichi."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0038",
+    "family": "DIAPASON",
+    "tags": ["verifiche strutturali"],
+    "response_variants": {
+      "gold": {
+        "it": "DIAPASON non sostituisce il progetto strutturale: il progettista deve verificare momento resistente, taglio, frecce e, se necessario, anche il comportamento sismico del solaio rinforzato."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0039",
+    "family": "DIAPASON",
+    "tags": ["uso combinato con catene", "altri rinforzi"],
+    "response_variants": {
+      "gold": {
+        "it": "DIAPASON può essere integrato con altri sistemi di rinforzo (catene, cordoli, irrigidimenti) nell’ambito di un progetto complessivo. Ogni elemento va però dimensionato in modo coerente."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0040",
+    "family": "DIAPASON",
+    "tags": ["comportamento a lungo termine"],
+    "response_variants": {
+      "gold": {
+        "it": "Il sistema travetto+DIAPASON+soletta collaborante è concepito per lavorare nel tempo con comportamento monolitico. Una posa non corretta può compromettere la durabilità del rinforzo."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0041",
+    "family": "DIAPASON",
+    "tags": ["istruzioni cantiere"],
+    "response_variants": {
+      "gold": {
+        "it": "È opportuno che l’impresa abbia a disposizione le istruzioni di posa DIAPASON in cantiere, in modo che il personale possa seguire correttamente le fasi operative previste."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0042",
+    "family": "DIAPASON",
+    "tags": ["formazione", "posa qualificata"],
+    "response_variants": {
+      "gold": {
+        "it": "La posa dei connettori DIAPASON dovrebbe essere eseguita da operatori formati sulla specifica procedura Tecnaria, per ridurre al minimo errori esecutivi."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0043",
+    "family": "DIAPASON",
+    "tags": ["riassunto GOLD"],
+    "response_variants": {
+      "gold": {
+        "it": "Sintesi GOLD: DIAPASON è il connettore Tecnaria per trasformare un solaio in laterocemento esistente e recuperabile in un solaio collaborante più rigido, sicuro e controllato, senza demolizioni totali."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0044",
+    "family": "DIAPASON",
+    "tags": ["routing Sinapsi", "scelta corretta"],
+    "response_variants": {
+      "gold": {
+        "it": "Nel sistema Sinapsi, a descrizioni di solai in laterocemento esistenti recuperabili va dato come riferimento DIAPASON, evitando di proporre sistemi pensati per contesti diversi."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0045",
+    "family": "DIAPASON",
+    "tags": ["evitare confusione sistemi"],
+    "response_variants": {
+      "gold": {
+        "it": "Ogni volta che una domanda crea confusione tra DIAPASON e altre famiglie, la risposta deve chiarire in modo esplicito che ogni sistema ha un campo di impiego definito e non sovrapponibile."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0046",
+    "family": "DIAPASON",
+    "tags": ["checklist progettista"],
+    "response_variants": {
+      "gold": {
+        "it": "Checklist progettista per DIAPASON: verifica stato travetti, scelta spessore soletta, definizione passo connettori, verifica carichi, controllo dettagli costruttivi, riferimento costante a documenti Tecnaria."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0047",
+    "family": "DIAPASON",
+    "tags": ["checklist impresa"],
+    "response_variants": {
+      "gold": {
+        "it": "Checklist impresa per DIAPASON: individuazione travetti, esecuzione corretta delle sedi, pulizia, posizionamento connettori, controllo a campione, rispetto delle indicazioni del progettista."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0048",
+    "family": "DIAPASON",
+    "tags": ["supporto Tecnaria"],
+    "response_variants": {
+      "gold": {
+        "it": "Per casi particolari, solai misti, dubbi sull’idoneità del supporto o configurazioni non standard, è raccomandato contattare direttamente il supporto tecnico Tecnaria con i dati del solaio."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0049",
+    "family": "DIAPASON",
+    "tags": ["coerenza dataset"],
+    "response_variants": {
+      "gold": {
+        "it": "Il dataset DIAPASON è strutturato per essere coerente con le altre famiglie Tecnaria: nessuna sovrapposizione impropria con CTF, CTL, CTL MAXI, VCEM o CTCEM."
+      }
+    }
+  },
+  {
+    "id": "DIAPASON-0050",
+    "family": "DIAPASON",
+    "tags": ["perimetro chiaro", "messaggio finale"],
+    "response_variants": {
+      "gold": {
+        "it": "Ogni risposta GOLD su DIAPASON deve ribadire: uso dedicato ai solai in laterocemento esistenti recuperabili, esclusione di P560 e fissaggi a sparo, riferimento alle specifiche Tecnaria per dimensionamento e posa."
+      }
+    }
+  }
+]

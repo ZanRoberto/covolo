@@ -1,0 +1,81 @@
+:root {
+  --tecnaria-orange: #f37021;
+  --light-bg: #ffffff;
+  --dark-bg: #1e1e1e;
+}
+
+/* Generale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--dark-bg);
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+h1 {
+  color: var(--tecnaria-orange);
+}
+
+/* Label */
+label {
+  display: block;
+  margin-top: 12px;
+  color: var(--tecnaria-orange);
+  font-weight: bold;
+}
+
+/* Input, textarea, select */
+textarea, input, select {
+  width: 100%;
+  background-color: var(--light-bg);
+  color: #000;
+  border: 1px solid var(--tecnaria-orange);
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+textarea[readonly] {
+  background-color: #f8f8f8;
+  color: #555;
+}
+
+/* Bottoni */
+button {
+  background-color: var(--tecnaria-orange);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+/* Card */
+.card {
+  background: #3a3a3a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+/* Campi obbligatori */
+input.required, select.required {
+  border: 2px solid var(--tecnaria-orange);
+  box-shadow: 0 0 4px var(--tecnaria-orange);
+}

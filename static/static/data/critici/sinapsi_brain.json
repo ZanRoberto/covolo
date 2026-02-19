@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ctf_vs_diapason",
+    "pattern": "(?i)(ctf).*(diapason)|(diapason).*(ctf)|differenz|confront|quando\\s+usare|quale\\s+scegliere",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **CTF**: solai acciaio–calcestruzzo con lamiera grecata (Hi-Bond/TR60), posa dall’alto con **SPIT P560** e 2 chiodi HSBR14.\n- **Diapason**: rinforzo solai in laterocemento senza lamiera; fissaggi meccanici e getto collaborante.\n- **Scelta**: dipende da tipologia solaio, vincoli e tempi.\n\n**Spiegazione fluida**: I connettori **CTF** si scelgono quando c’è o si posa la lamiera grecata: lavorano velocemente e garantiscono collaborazione acciaio–cls. Il sistema **Diapason** è invece indicato per rinforzare laterocemento senza lamiera: soluzione poco invasiva e consolidante."
+  },
+  {
+    "id": "ctl_vs_diapason",
+    "pattern": "(?i)(ctl).*(diapason)|(diapason).*(ctl)|laterocemento.*ctl|ctl.*laterocemento",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **CTL**: connettori per solai legno–calcestruzzo, fissati con viti su travi lignee.\n- **Diapason**: per solai in laterocemento con getto collaborante.\n\n**Spiegazione fluida**: I connettori **CTL** sono dedicati al legno, fissati con viti autoforanti. Il sistema **Diapason** è invece nato per rinforzare solai in laterocemento: si lavora dall’alto con getto collaborante. Non sono intercambiabili: CTL = legno, Diapason = laterocemento."
+  },
+  {
+    "id": "ctl_vs_ctf",
+    "pattern": "(?i)ctl.*ctf|ctf.*ctl",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **CTL**: solai legno–cls; fissaggio con viti Ø10.\n- **CTF**: solai acciaio–cls con lamiera; fissaggio con P560 + HSBR14.\n- **Certificazioni**: entrambi ETA.\n\n**Spiegazione fluida**: I **CTL** sono dedicati al legno, mentre i **CTF** all’acciaio con lamiera grecata. Entrambi certificati ETA, ma non intercambiabili."
+  },
+  {
+    "id": "p560_policy",
+    "pattern": "(?i)\\bp\\s*[- ]?560\\b.*(patentino|abilitazione|formazione)",
+    "mode": "override",
+    "lang": "it",
+    "answer": "OK\n- **Patentino**: non richiesto per SPIT P560.\n- **Formazione**: interna secondo manuale Tecnaria/SPIT.\n- **Fissaggio**: 2 chiodi HSBR14 per connettore CTF.\n\n**Spiegazione fluida**: Per usare la SPIT **P560** non serve patentino: basta una breve formazione interna su sicurezza e taratura. Ogni CTF richiede 2 chiodi HSBR14. Essenziali DPI e prova su campione."
+  },
+  {
+    "id": "ctf_density_fix",
+    "pattern": "(?i)\\bctf\\b.*(densit|quanti|m2|m²|numero|pezzi|fissagg|chiod|p560|hsbr)",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **Media**: 6–8 CTF/m² (più densi agli appoggi).\n- **Determinazione**: da calcolo strutturale.\n- **Fissaggio**: 2 chiodi HSBR14 per connettore.\n\n**Spiegazione fluida**: In media si prevedono 6–8 CTF al metro quadrato, distribuiti più fitti vicino agli appoggi. La quantità finale dipende da calcolo strutturale e condizioni di cantiere."
+  },
+  {
+    "id": "ctf_hibond_advantages",
+    "pattern": "(?i)\\bctf\\b.*(hi[- ]?bond|lamiera)|hi[- ]?bond.*ctf|vantagg",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **Compatibilità**: progettati per lamiera Hi-Bond/TR60.\n- **Vantaggi**: maggiore rigidezza, deformazioni ridotte, luci più ampie.\n- **Posa**: veloce dall’alto con P560.\n\n**Spiegazione fluida**: Con Hi-Bond i CTF garantiscono perfetta collaborazione acciaio–cls, spessori contenuti e tempi ridotti di posa."
+  },
+  {
+    "id": "ctl_maxi_selector",
+    "pattern": "(?i)(ctl|maxi).*tavolato.*(1\\s*cm|2\\s*cm|20\\s*mm).*soletta.*5\\s*cm",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **Soluzione**: CTL MAXI 12/040.\n- **Viti**: Ø10×100 (Ø10×120 se tavolato >25–30 mm).\n\n**Spiegazione fluida**: Con tavolato da 2 cm e soletta da 5 cm, il CTL MAXI 12/040 è ideale. Le viti standard sono Ø10×100, ma se lo spessore intermedio supera i 25–30 mm occorre passare a Ø10×120."
+  },
+  {
+    "id": "ctcem_overview",
+    "pattern": "(?i)ctcem",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **CTCEM**: connettori acciaio–cls senza lamiera grecata.\n- **Uso**: quando non è prevista lamiera collaborante.\n- **Posa**: avvitati direttamente su profili/travi.\n\n**Spiegazione fluida**: I **CTCEM** si impiegano quando non si usa la lamiera grecata: si fissano direttamente alle travi e permettono la collaborazione acciaio–cls senza necessità di elementi sottili di lamiera."
+  },
+  {
+    "id": "cem_e_overview",
+    "pattern": "(?i)cem-?e|mini.*cem-?e",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **CEM-E/MINI CEM-E**: connettori a vite per rinforzo solai in laterocemento.\n- **Posa**: fissaggio diretto nei travetti con viti hi-low.\n\n**Spiegazione fluida**: I **CEM-E** e **Mini CEM-E** servono per consolidare i solai in laterocemento, fissati con viti hi-low direttamente nei travetti. Sono una soluzione mirata per migliorare portata e rigidezza senza interventi invasivi."
+  },
+  {
+    "id": "gts_overview",
+    "pattern": "(?i)gts|manicotti|giunzioni",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **Manicotti GTS**: giunzioni filettate per barre ad aderenza migliorata.\n- **Uso**: giunzioni sicure e certificate in strutture in c.a.\n\n**Spiegazione fluida**: I **GTS** sono manicotti filettati usati per giuntare barre d’armatura in modo sicuro e certificato, garantendo continuità strutturale nelle armature in calcestruzzo armato."
+  },
+  {
+    "id": "documents_certifications",
+    "pattern": "(?i)eta|dop|certificat|dichiarazione.*prestazione",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **Documenti disponibili**: ETA, DoP, certificazioni CE.\n- **Richiesta**: forniti su richiesta cliente.\n\n**Spiegazione fluida**: Tutti i prodotti Tecnaria sono accompagnati da documenti ufficiali: certificazioni ETA, DoP e marcatura CE. Sono disponibili su richiesta e scaricabili dal sito o inviati direttamente con la fornitura."
+  },
+  {
+    "id": "commercial_export",
+    "pattern": "(?i)prezzo|cost|preventiv|distribut|export|spedizion|incoterm|hs.?code",
+    "mode": "augment",
+    "lang": "it",
+    "answer": "OK\n- **Preventivi**: forniti su richiesta con specifica di progetto.\n- **Export**: spedizione diretta o tramite distributori.\n- **Incoterms**: EXW/FCA; altri su richiesta.\n\n**Spiegazione fluida**: Per offerte e prezzi è necessario contattare Tecnaria indicando progetto e destinazione. L’azienda fornisce documentazione export (packing list, invoice, dichiarazione origine) e spedisce direttamente o tramite distributori locali. Incoterms tipici EXW o FCA."
+  }
+]
+
+
+

@@ -1,0 +1,70 @@
+[TAGS: codici, elenco prodotti, connettori Tecnaria, catalogo, ricambistica P560]
+
+=== CTF — Connettori acciaio–calcestruzzo (piolo su piastra) ===
+CTF020
+CTF025
+CTF030
+CTF040
+CTF060
+CTF070
+CTF080
+CTF090
+CTF105
+CTF125
+CTF135
+
+=== DIAPASON — Connettori per acciaio–calcestruzzo (staffa/lamiera) ===
+CTFS D100
+CTFS D125
+
+=== CEM-E — Riprese di getto calcestruzzo–calcestruzzo ===
+CT CEM-E 14/040
+V CEM-E 14/040-E
+MINI CEM-E 10/020
+MINI CEM-E 10/030
+MINI CEM-E 10/040
+
+=== CTL — Connettori legno–calcestruzzo ===
+CTLB020 … CTLB200    (serie BASE, altezze 20–200 mm)
+CTLM020 … CTLM200    (serie MAXI, altezze 20–200 mm)
+
+=== CTL OMEGA — Piastra + vite tirafondo (legno–calcestruzzo) ===
+CVT 40V-10/100
+CVT 40V-10/120
+CVT 40V-10/140
+
+=== HBV — Sistema legno–calcestruzzo (gamma HBV Tecnaria) ===
+HBV (famiglia connettori HBV)
+X-HBV (varianti rinforzate/trasversali)
+
+=== Altre famiglie/soluzioni di gamma Tecnaria ===
+CT-L       (sistema legno–calcestruzzo a piastra/lamiera, dove previsto)
+FVA        (ferramenta/ancoraggi di sistema, legno)
+FVA-L      (ferramenta/ancoraggi di sistema, legno)
+CLS        (componenti per collaborante su cls)
+CLSR       (varianti/ricette per cls rinforzato)
+
+=== Pistola P560 (utensile per fissaggio) e ricambi/consumabili ===
+014000  → P560 (pistola sparachiodi)
+013994  → Guidapunte CTF
+013997  → Pistone P560 (ricambio)
+014136  → Anello ammortizzatore Ø22 mm
+SBR14   → Chiodi ad alta resistenza per CTF
+[TAGS: codici connettori tecnaria, elenco prodotti, catalogo, lista codici]
+
+D: Posso avere l’elenco dei prodotti Tecnaria?
+R: Sì, sono disponibili famiglie CTF, Diapason, CEM-E, MINI CEM-E, CLS, CLSR, CTL, FVA, FVA-L e relativi accessori. Per i codici dettagliati vedi questa stessa sezione o richiedi il listino aggiornato.
+────────────────────────────
+D: Come leggere i codici?
+R: Il prefisso identifica la famiglia (es. CTF, CEM-E), seguito da dimensione/serie. Le tabelle associati indicano compatibilità e prestazioni.
+────────────────────────────
+D: Posso ricevere i codici in Excel?
+R: Sì, il commerciale può fornire un estratto aggiornato per commessa/fornitura.
+────────────────────────────
+D: I codici cambiano?
+R: Raramente; eventuali revisioni sono comunicate e tracciate nel listino.
+────────────────────────────
+D: Dove verificare disponibilità?
+R: Con il commerciale/logistica, indicando quantità e tempi desiderati.
+
+

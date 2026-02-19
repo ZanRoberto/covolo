@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "id": "CROSS-VCEMvsCTCEM-DECIDER-001",
+      "family": "CROSS",
+      "tags": ["laterocemento", "confronto", "vchem_vs_ctcem"],
+      "triggers": [
+        "quando scegliere vcem o ctcem",
+        "quando usare vcem o ctcem",
+        "differenza vcem ctcem solaio laterocemento",
+        "vcem vs ctcem",
+        "vcem o ctcem quale scegliere"
+      ]
+    },
+    {
+      "id": "DIAPASON-QUANDO-0001",
+      "family": "DIAPASON",
+      "tags": ["laterocemento", "rinforzo", "rigidezza", "recupero"],
+      "triggers": [
+        "quando è meglio usare i diapason",
+        "quando usare diapason",
+        "diapason vs vcem",
+        "diapason vs ctcem",
+        "diapason per solaio laterocemento"
+      ]
+    },
+    {
+      "id": "CTF-PREFORO-0001",
+      "family": "CTF",
+      "tags": ["ctf", "p560", "preforo", "posa"],
+      "triggers": [
+        "ctf preforo si può fare",
+        "ctf preforo si puo fare",
+        "ctf serve preforo",
+        "ctf su trave in acciaio preforo",
+        "ctf fori prima di sparare"
+      ]
+    },
+    {
+      "id": "P560-DPI-0001",
+      "family": "P560",
+      "tags": ["p560", "sicurezza", "dpi"],
+      "triggers": [
+        "p560 quali sono i dpi minimi",
+        "dpi obbligatori per usare la p560",
+        "sicurezza p560",
+        "protezione individuale p560",
+        "dpi per chiodatrice p560 tecnaria"
+      ]
+    },
+    {
+      "id": "CTL-FESSURE-0001",
+      "family": "CTL",
+      "tags": ["ctl", "fessure", "verifica", "controlli"],
+      "triggers": [
+        "ctl con fessure nel travetto rimane collaborante",
+        "ctl su legno fessurato",
+        "ctl legno fessurato è ancora valido",
+        "ctl con travi fessurate",
+        "ctl come verificare fessure nel legno"
+      ]
+    },
+    {
+      "id": "CTF-CHIODATRICE-0002",
+      "family": "CTF",
+      "tags": ["ctf", "p560", "chiodatrice", "posa"],
+      "triggers": [
+        "con riferimento ai connettori ctf tecnaria si possono posare con chiodatrice qualsiasi",
+        "ctf si possono posare con una chiodatrice qualsiasi",
+        "ctf chiodatrice qualsiasi",
+        "ctf posso usare un altra chiodatrice",
+        "posare ctf con chiodatrice non p560"
+      ]
+    }
+  ]
+}

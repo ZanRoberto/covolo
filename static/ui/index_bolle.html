@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tecnaria_V3</title>
+  <style>
+    :root { --green:#0aa84f; --dk:#0b1320; --bg:#0f1a2b; --card:#12213a; --muted:#8ca3b8;}
+    *{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    body{margin:0;background:linear-gradient(180deg,#08101d,#0c1a2d 60%,#0a1526);color:#e8f1f8}
+    header{padding:18px 20px;border-bottom:1px solid #19324e;background:#0d1a2a;position:sticky;top:0}
+    h1{margin:0;font-size:20px;color:#eafff4}
+    .container{max-width:1000px;margin:24px auto;padding:0 16px}
+    .bar{display:flex;gap:10px}
+    input[type=text]{flex:1;padding:12px 14px;border-radius:10px;border:1px solid #254766;background:#0f2138;color:#e6f6ee}
+    button{padding:12px 16px;border-radius:10px;background:var(--green);border:none;color:#02150a;font-weight:700;cursor:pointer}
+    button:hover{filter:brightness(0.95)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    .card{background:#102339;border:1px solid #1b3a5a;border-radius:14px;padding:14px}
+    .muted{color:#9fb3c8;font-size:13px}
+    pre{white-space:pre-wrap;word-wrap:break-word;margin:0}
+    .title{font-weight:700;margin-bottom:6px}
+    .samples{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{background:#11273f;border:1px solid #1a3e60;border-radius:999px;padding:8px 10px;font-size:13px;cursor:pointer}
+    .chip:hover{border-color:#2e6b9d}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><h1>🟢 Tecnaria_V3</h1></header>
+  <div class="container">
+    <div class="card">
+      <div class="muted">Scrivi la domanda e premi <b>Chiedi</b>. Oppure scegli un esempio.</div>
+      <div class="bar" style="margin-top:10px">
+        <input id="q" type="text" placeholder="Es: Differenza tra CEM-E e CTCEM nella posa su laterocemento?" />
+        <button id="go">Chiedi</button>
+      </div>
+      <div class="samples" id="samples"></div>
+    </div>
+
+    <div class="grid" style="margin-top:16px">
+      <div class="card">
+        <div class="title">Risposta</div>
+        <div class="muted" id="meta"></div>
+        <pre id="answer"></pre>
+        <div id="html"></div>
+      </div>
+      <div class="card">
+        <div class="title">Debug</div>
+        <pre id="debug"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function fetchJSON(url){
+      const r = await fetch(url);
+      if(!r.ok) throw new Error("HTTP "+r.status);
+      return r.json();
+    }
+    async function ask(q){
+      const url = "/api/ask?q="+encodeURIComponent(q||"");
+      const t0=performance.now();
+      const data = await fetchJSON(url);
+      const dt = Math.max(1,Math.round(performance.now()-t0));
+      document.getElementById("meta").textContent =
+        `match_id: ${data.match_id}\nintent: ${data.intent} | famiglia: ${data.family} | lang: ${data.lang}\nms: ${dt}`;
+      document.getElementById("answer").textContent = data.text || "";
+      document.getElementById("html").innerHTML = data.html || "";
+      document.getElementById("debug").textContent = JSON.stringify(data,null,2);
+    }
+    async function loadUI(){
+      try{
+        const ui = await fetchJSON("/ui"); // se app.py ritorna JSON di fallback:
+        if(ui && ui.samples){
+          const wrap = document.getElementById("samples");
+          ui.samples.forEach(s=>{
+            const chip=document.createElement("div");
+            chip.className="chip";
+            chip.textContent=s;
+            chip.onclick=()=>{ document.getElementById("q").value=s; ask(s); };
+            wrap.appendChild(chip);
+          });
+        }
+      }catch{}
+    }
+    document.getElementById("go").onclick = ()=>{
+      const q = document.getElementById("q").value||"";
+      ask(q);
+    };
+    loadUI();
+  </script>
+</body>
+</html>

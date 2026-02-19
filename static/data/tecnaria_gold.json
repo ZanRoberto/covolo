@@ -1,0 +1,2657 @@
+{
+  "_meta": {
+    "version": "TECNARIA_GOLD-SINAPSI-A2SR-MASTER",
+    "project": "TECNARIA_GOLD",
+    "generated_at": "2025-11-02T11:30:00",
+    "language_base": "it",
+    "families_active": [
+      "COMM",
+      "CTF",
+      "CTL",
+      "CTL MAXI",
+      "CTCEM",
+      "VCEM",
+      "P560",
+      "DIAPASON",
+      "GTS",
+      "ACCESSORI",
+      "CONFRONTO",
+      "PROBLEMATICHE",
+      "KILLER"
+    ],
+    "notes": [
+      "FILE MASTER — nome fisso: static/data/tecnaria_gold.json",
+      "Sede corretta: Viale Pecori Giraldi, 55 – 36061 Bassano del Grappa (VI)",
+      "Tutte risposte GOLD (contesto, posa, checklist, nota di cantiere)",
+      "Traduzione solo runtime (IT → EN/FR/DE/ES)",
+      "Compatibile con loader duale /qa/ask (domanda/risposta + question/answer)",
+      "Pensato per NLM naturale: sinonimi e keyword sporche già dentro ai trigger"
+    ]
+  },
+  "items": [
+    {
+      "id": "COMM-0001",
+      "family": "COMM",
+      "domanda": "Dove si trova la Tecnaria S.p.A.?",
+      "risposta": "La Tecnaria S.p.A. ha sede in **Viale Pecori Giraldi, 55 – 36061 Bassano del Grappa (VI)**, Italia. Qui trovi uffici tecnici, ufficio commerciale, magazzino e spedizioni. È il riferimento unico per CTF, CTL, CTL MAXI, CTCEM, VCEM, P560, GTS, Diapason e accessori. Tel. **+39 0424 502029** – Email: **info@tecnaria.com**.",
+      "question": "Where is Tecnaria located?",
+      "answer": "Tecnaria is in Viale Pecori Giraldi, 55 – 36061 Bassano del Grappa (VI), Italy.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "dove si trova tecnaria",
+          "sede tecnaria",
+          "indirizzo tecnaria",
+          "pecori giraldi 55",
+          "bassano del grappa",
+          "uffici tecnici tecnaria",
+          "telefono tecnaria",
+          "email tecnaria"
+        ]
+      }
+    },
+    {
+      "id": "COMM-0002",
+      "family": "COMM",
+      "domanda": "Come devo ordinare i prodotti Tecnaria?",
+      "risposta": "Per **piccoli ordini (fino a circa 2.000 pezzi)** puoi usare l’e-commerce Tecnaria o inviare direttamente l’ordine via email all’ufficio commerciale (info@tecnaria.com) indicando: codice prodotto, quantità, cantiere di destinazione, eventuale urgenza. Per **forniture più complesse** (diverse famiglie, accessori P560, chiodi, ecc.) è preferibile inviare una **richiesta completa** per avere conferma disponibilità e tempi.",
+      "trigger": {
+        "peso": 0.93,
+        "keywords": [
+          "come ordinare",
+          "ordine tecnaria",
+          "comprare connettori tecnaria",
+          "dove compro ctf",
+          "come faccio ordine"
+        ]
+      }
+    },
+    {
+      "id": "COMM-0003",
+      "family": "COMM",
+      "domanda": "Posso chiedere supporto tecnico per scegliere il connettore?",
+      "risposta": "Sì. Tecnaria fornisce **supporto tecnico diretto** per la scelta del connettore: CTF su acciaio, CTL e CTL MAXI su legno, CTCEM/VCEM su laterocemento, con indicazioni di lunghezze, diametri e **modalità di posa**. È utile inviare: sezione della trave, tipo di solaio esistente, spessore della lamiera o del tavolato, spessore del getto previsto.",
+      "trigger": {
+        "peso": 0.88,
+        "keywords": [
+          "supporto tecnico",
+          "consiglio connettore",
+          "non so che connettore usare",
+          "scelta ctf o ctl",
+          "aiuto posa"
+        ]
+      }
+    },
+    {
+      "id": "COMM-0004",
+      "family": "COMM",
+      "domanda": "Quali famiglie di connettori produce Tecnaria?",
+      "risposta": "Le famiglie attive sono: **CTF** (travi acciaio + lamiera + getto), **CTL** (travi legno con soletta), **CTL MAXI** (legno con grande spessore o tavolati sottili), **CTCEM** e **VCEM** (laterocemento), **P560** (chiodatrice e chiodi HSBR14 per CTF), **DIAPASON** (piastre per rinforzi), **GTS** (connettori trave-solaio), **ACCESSORI** (piastre, rondelle, punte).",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "famiglie tecnaria",
+          "quali connettori ci sono",
+          "catalogo tecnaria",
+          "ctf ctl vcem ctcem"
+        ]
+      }
+    },
+    {
+      "id": "COMM-0005",
+      "family": "COMM",
+      "domanda": "Come funziona la traduzione in altre lingue?",
+      "risposta": "Il dataset Tecnaria GOLD resta in **lingua italiana** per coerenza con la documentazione originale. Tuttavia il sistema è pensato per **tradurre a runtime** in EN/FR/DE/ES in base alla domanda. Quindi puoi fare la domanda in francese e ricevere l’equivalente risposta GOLD in francese.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "english version",
+          "traduction",
+          "deutsch",
+          "spanish",
+          "traduzione"
+        ]
+      }
+    },
+    {
+      "id": "COMM-0007",
+      "family": "COMM",
+      "domanda": "Qual è il nome del file master che devo usare?",
+      "risposta": "Usa **sempre e solo** questo nome: `static/data/tecnaria_gold.json`. È il nome che la tua `app.py` si aspetta e che le future versioni del progetto useranno come riferimento.",
+      "trigger": {
+        "peso": 0.95,
+        "keywords": [
+          "nome file",
+          "come lo devo chiamare",
+          "tecnaria_gold.json",
+          "static data"
+        ]
+      }
+    },
+    {
+      "id": "COMM-0008",
+      "family": "COMM",
+      "domanda": "La mia app dà 503, può essere il JSON?",
+      "risposta": "Sì. Se il JSON ha **una virgola di troppo** o **un oggetto dopo la chiusura dell’array** (`Extra data` su Render) l’app va in errore all’avvio. In quel caso verifica che ci sia **una sola radice** con `_meta` e `items` e che **ogni item sia separato da virgole** tranne l’ultimo.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "503",
+          "extra data",
+          "jsondecodeerror",
+          "render non parte",
+          "app.py errore"
+        ]
+      }
+    },
+    {
+      "id": "COMM-0009",
+      "family": "COMM",
+      "domanda": "Come faccio ad aggiungere nuove domande senza rompere il file?",
+      "risposta": "Aggiungi le nuove domande **solo dentro l’array `items`**, mantenendo la stessa struttura: `id`, `family`, `domanda`, `risposta`, `trigger`. Non aggiungere mai un secondo `_meta`. Controlla sempre con un validatore JSON.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "aggiungere domande",
+          "nuove qa",
+          "come inserire nuova domanda",
+          "validare json"
+        ]
+      }
+    },
+    {
+      "id": "COMM-0010",
+      "family": "COMM",
+      "domanda": "Tecnaria fa anche consulenza su cantieri esistenti?",
+      "risposta": "Sì, è possibile inviare foto, schemi o piante e chiedere **soluzioni di rinforzo collaborante** con i loro connettori. In questi casi è importante indicare: stato di fatto, luci, carichi, solaio esistente, presenza di lamiera, tipo di legno o acciaio.",
+      "trigger": {
+        "peso": 0.55,
+        "keywords": [
+          "cantiere esistente",
+          "sopralluogo",
+          "foto trave",
+          "solaio vecchio"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0001",
+      "family": "CTF",
+      "domanda": "Che cosa sono i connettori CTF Tecnaria?",
+      "risposta": "**Contesto**: i CTF sono i connettori Tecnaria per collegare **travi in acciaio S275–S355** con una **soletta collaborante in calcestruzzo**, spesso con **lamiera grecata** interposta. \n**Posa**: fissaggio meccanico a secco con **SPIT P560** e **2 chiodi HSBR14 per connettore**. La lamiera deve essere **perfettamente serrata** all’ala. \n**Checklist**: (1) lamiera ben aderente; (2) connettore perpendicolare; (3) due chiodi; (4) teste a filo piastra (±0,5 mm); (5) rete a metà spessore; (6) cls ≥ C25/30. \n**Nota RAG**: se la domanda parla genericamente di “connettori su acciaio” → instradare verso CTF.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "ctf",
+          "connettori per acciaio",
+          "connettore su trave in acciaio",
+          "lamiera grecata",
+          "p560",
+          "hsbr14"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0002",
+      "family": "CTF",
+      "domanda": "Mi dai i codici dei connettori CTF?",
+      "risposta": "**Famiglia CTF – codici principali (esempio tipologia)**:\n- **CTF 60/15** – per lamiera sottile e getti standard 5–6 cm;\n- **CTF 80/15** – più alto, per travi con maggior copriferro;\n- **CTF 100/20** – per solette più spesse e maggior capacità di taglio;\n- **CTF LAM** – varianti per lamiere particolari.\nI codici completi sono nel listino Tecnaria e variano per **altezza connettore** e **spessore piastra**. In cantiere la regola è: **altezze più alte = soletta più alta o lamiera più profonda**.",
+      "trigger": {
+        "peso": 0.97,
+        "keywords": [
+          "codici ctf",
+          "listino ctf",
+          "articoli ctf",
+          "codice connettore acciaio",
+          "ctf 60",
+          "ctf 80",
+          "ctf 100"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0003",
+      "family": "CTF",
+      "domanda": "Posso posare i CTF su lamiera non serrata?",
+      "risposta": "No, o meglio: **non è consigliato**. La posa corretta dei CTF richiede che la lamiera sia **ben serrata** all’ala della trave per non disperdere l’energia del colpo P560 e per evitare rimbalzi che lasciano i chiodi fuori quota. Se la lamiera non è serrata, prevedi **punti di fissaggio preliminari** (viti autofilettanti, saldature puntuali, staffe) e solo dopo spara i CTF.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "lamiera non serrata",
+          "lamiera che si muove",
+          "ctf su lamiera lenta",
+          "problemi sparo p560"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0004",
+      "family": "CTF",
+      "domanda": "Quanti chiodi devo usare per ogni connettore CTF?",
+      "risposta": "Per i CTF Tecnaria posati con SPIT P560 si usano **sempre 2 chiodi HSBR14 per connettore**. È una prescrizione ricorrente nelle istruzioni di posa: 1 chiodo solo **non** garantisce la portanza di progetto.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "quanti chiodi ctf",
+          "2 chiodi hsbr14",
+          "sparo doppio",
+          "p560 2 colpi"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0005",
+      "family": "CTF",
+      "domanda": "Che calcestruzzo devo usare con i CTF?",
+      "risposta": "Per i solai collaboranti con CTF si raccomanda un **cls ≥ C25/30** con adeguata **vibrazione**. Il cls deve avvolgere bene il connettore e la rete a metà spessore. Evita getti troppo poveri o non vibrati.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "cls per ctf",
+          "calcestruzzo ctf",
+          "classe c25",
+          "getto collaborante acciaio"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0006",
+      "family": "CTF",
+      "domanda": "Cosa controllo in cantiere dopo la posa dei CTF?",
+      "risposta": "**Controlli minimi**: (1) le teste dei chiodi devono essere **a filo piastra** o appena dentro (±0,5 mm); (2) il connettore deve essere in **asse e perpendicolare**; (3) non devono esserci chiodi mancati o deformati; (4) verificare che **non si muova la lamiera**; (5) annotare nel verbale la **macchina usata (SPIT P560)** e il **tipo di chiodo**.",
+      "trigger": {
+        "peso": 0.85,
+        "keywords": [
+          "controlli cantiere ctf",
+          "verifica posa ctf",
+          "teste a filo",
+          "verbale posa"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0007",
+      "family": "CTF",
+      "domanda": "Se sbaglio e metto un CTF dove serviva un VCEM?",
+      "risposta": "Succede. In quel caso **se il supporto è in laterocemento** e hai usato un CTF (che nasce per acciaio + P560) la posa **non è conforme**. Va rimosso e va fatto foro e connettore **CTCEM o VCEM** con vite di ancoraggio. Annotare l’errore nel giornale lavori.",
+      "trigger": {
+        "peso": 0.82,
+        "keywords": [
+          "ho sbagliato connettore",
+          "messo ctf su laterocemento",
+          "errore posa",
+          "come rimediare"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0008",
+      "family": "CTF",
+      "domanda": "La P560 la posso usare per posare i VCEM?",
+      "risposta": "No. La **SPIT P560** è per **CTF su acciaio** con chiodi **HSBR14**. I **VCEM** e i **CTCEM** sono connettori per laterocemento e si fissano **per foratura + avvitatura meccanica**, non a sparo. Usare la P560 sui VCEM danneggia il connettore e fa perdere la conformità.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "p560 su vcem",
+          "posare vcem con p560",
+          "chiodatrice su ctcem",
+          "sparo su laterocemento"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0009",
+      "family": "CTF",
+      "domanda": "Qual è la distanza minima tra due connettori CTF?",
+      "risposta": "Seguire sempre la tabella Tecnaria. In generale si lavora su **passi regolari** (es. 150–200 mm) in funzione del taglio da trasferire e della geometria della lamiera. Evitare di mettere due connettori troppo vicini perché la lamiera potrebbe non avere appoggio sufficiente.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "passo ctf",
+          "distanza ctf",
+          "interasse connettori acciaio"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0010",
+      "family": "CTF",
+      "domanda": "Che succede se il chiodo non entra bene?",
+      "risposta": "Se la testa non è a filo piastra o vedi un chiodo storto, il connettore **va riposato**: o si ripete lo sparo (se la lamiera è ok) o si fissa con metodo alternativo. Non lasciare connettori con chiodi fuori quota.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "chiodo non entra",
+          "chiodo storto",
+          "testa fuori",
+          "riposare ctf"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0011",
+      "family": "CTF",
+      "domanda": "Come capisco se devo usare un CTF alto?",
+      "risposta": "Valuta **profondità lamiera** + **spessore getto**. Se la lamiera è molto profonda o se la soletta è più alta di 5–6 cm è meglio scegliere il connettore CTF più alto così il dente resta ben immerso nel cls.",
+      "trigger": {
+        "peso": 0.55,
+        "keywords": [
+          "ctf alto",
+          "ctf 100",
+          "lamiera profonda",
+          "soletta alta"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0012",
+      "family": "CTF",
+      "domanda": "Posso usare un solo chiodo se la lamiera è sottile?",
+      "risposta": "No, la regola di posa Tecnaria per CTF è **2 chiodi HSBR14** anche se la lamiera è sottile. Il secondo chiodo garantisce tenuta e impedisce la rotazione del connettore.",
+      "trigger": {
+        "peso": 0.95,
+        "keywords": [
+          "un chiodo solo",
+          "lamiera sottile",
+          "posare con un solo colpo"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0013",
+      "family": "CTF",
+      "domanda": "Posso saldare i CTF invece di usare la P560?",
+      "risposta": "I CTF nascono per posa **meccanica a secco** con P560. Se in cantiere si vuole saldare, occorre verificare **con l’ufficio tecnico Tecnaria** che il connettore e la piastra siano idonei e che la saldatura non comprometta la zincatura o le caratteristiche del pezzo.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "saldare ctf",
+          "saldatura al posto di p560",
+          "non ho la chiodatrice"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0014",
+      "family": "CTF",
+      "domanda": "Se la lamiera è doppia o sovrapposta come faccio?",
+      "risposta": "Fissa prima le lamiere tra loro (viti autofilettanti o fissaggi puntuali) in modo che lavorino come **un unico pacchetto**, poi posa i CTF con P560. Non sparare CTF su lamiera che scorre.",
+      "trigger": {
+        "peso": 0.52,
+        "keywords": [
+          "lamiera doppia",
+          "due lamiere sovrapposte",
+          "ctf su lamiera doppia"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0015",
+      "family": "CTF",
+      "domanda": "Serve la rete elettrosaldata con i CTF?",
+      "risposta": "Sì, in generale va messa **a metà spessore** del getto collaborante per evitare fessurazioni e per collegare i connettori. La rete è parte integrante della soluzione.",
+      "trigger": {
+        "peso": 0.55,
+        "keywords": [
+          "rete con ctf",
+          "rete a metà spessore",
+          "elettrosaldata"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0016",
+      "family": "CTF",
+      "domanda": "Il getto è di soli 5 cm, i CTF vanno bene lo stesso?",
+      "risposta": "Sì, se il connettore è scelto in funzione di lamiera + 5 cm di getto e se la rete è a metà. Se sei al limite, chiedi all’ufficio tecnico.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "getto 5 cm",
+          "soletta 5 cm",
+          "poco spessore"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0017",
+      "family": "CTF",
+      "domanda": "Ho messo un chiodo su un VCEM per errore, cosa faccio?",
+      "risposta": "È un errore tipico di cantiere quando si hanno insieme CTF e VCEM. Il chiodo su VCEM **non è ammesso**. Va rimosso e bisogna ripristinare il sottofondo e poi posare correttamente il VCEM con foro + vite. Segnare l’errore nel verbale.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "ho messo un chiodo su vcem",
+          "errore chiodo vcem",
+          "sparato su vcem",
+          "p560 su vcem"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0018",
+      "family": "CTF",
+      "domanda": "Serve una prova preliminare con la P560?",
+      "risposta": "Sì, fai **2–3 tiri di prova** sulla stessa trave/lamiera per verificare che la potenza sia quella giusta e che le teste siano a filo. Solo dopo vai in produzione.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "prova p560",
+          "test chiodatrice",
+          "taratura p560"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0019",
+      "family": "CTF",
+      "domanda": "È possibile posare i CTF senza lamiera?",
+      "risposta": "Sì, se hai trave in acciaio e getto collaborante senza lamiera puoi comunque usare i CTF fissandoli all’ala con P560. Controllare però lo spessore minimo di cls.",
+      "trigger": {
+        "peso": 0.45,
+        "keywords": [
+          "ctf senza lamiera",
+          "connettore diretto su trave",
+          "solo acciaio e soletta"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0020",
+      "family": "CTF",
+      "domanda": "Posso usare i CTF su travi HEA e HEB?",
+      "risposta": "Sì, i CTF sono pensati proprio per travi in acciaio HEA/HEB/IPE. Assicurati solo che la lamiera sia serrata.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "ctf su hea",
+          "ctf su heb",
+          "ctf su ipe"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0021",
+      "family": "CTF",
+      "domanda": "Ci sono limiti di temperatura o di ambiente?",
+      "risposta": "In ambienti molto umidi o aggressivi valutare con Tecnaria l’adeguata protezione. Il principio di posa però non cambia.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "ambiente aggressivo",
+          "umidità",
+          "ctf esterno"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0022",
+      "family": "CTF",
+      "domanda": "È obbligatoria la SPIT P560?",
+      "risposta": "Per avere la **posa corretta e ripetibile** sì, è obbligatoria. Altre macchine devono essere approvate.",
+      "trigger": {
+        "peso": 0.8,
+        "keywords": [
+          "obbligatoria p560",
+          "posso usare altra chiodatrice",
+          "macchina diversa"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0023",
+      "family": "CTF",
+      "domanda": "Serve l’ETA per i CTF?",
+      "risposta": "Tecnaria lavora con documentazione europea (es. ETA) sulle sue soluzioni. Per i cantieri pubblici o direzione lavori esigente tieni a portata la scheda tecnica.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "eta ctf",
+          "certificazioni",
+          "marcatura"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0024",
+      "family": "CTF",
+      "domanda": "Cosa succede se la lamiera è molto spessa?",
+      "risposta": "Se la lamiera è molto spessa, verifica che il chiodo abbia sufficiente penetrazione sull’ala. Al limite chiedi a Tecnaria la soluzione alternativa.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "lamiera spessa",
+          "p560 non passa",
+          "ctf lamiera forte"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0025",
+      "family": "CTF",
+      "domanda": "Quanti CTF servono per una trave?",
+      "risposta": "Dipende dal calcolo strutturale (taglio da trasferire). In generale si fanno file di connettori su ciascuna ala.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "quanti ctf servono",
+          "numero connettori",
+          "quanti metterne"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0026",
+      "family": "CTF",
+      "domanda": "Posso montare CTF anche in controluce (sottosopra)?",
+      "risposta": "La posa deve essere comoda e perpendicolare. In posizioni scomode aumenta il rischio di colpi non a filo.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "posa difficile",
+          "controluce",
+          "sottosopra"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0027",
+      "family": "CTF",
+      "domanda": "Serve protezione individuale durante la posa?",
+      "risposta": "Sì: occhiali, guanti, cuffie/otoprotettori per l’uso di P560 e DPI da cantiere.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "sicurezza posa ctf",
+          "dpi p560",
+          "protezione orecchie"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0028",
+      "family": "CTF",
+      "domanda": "Ci sono accessori per CTF?",
+      "risposta": "Sì: kit SPIT P560, chiodi HSBR14 in confezioni abbinate, eventuali adattatori.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "accessori ctf",
+          "chiodi hsbr",
+          "kit p560"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0029",
+      "family": "CTF",
+      "domanda": "Chi può posare i CTF?",
+      "risposta": "Operatore di cantiere formato all’uso della chiodatrice e informato sulla necessità dei 2 chiodi.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "chi puo posare",
+          "operatore",
+          "posatore"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0030",
+      "family": "CTF",
+      "domanda": "Posso usare CTF su trave zincata?",
+      "risposta": "Sì, ma valuta lo spessore della zincatura e l’aderenza della lamiera.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "trave zincata",
+          "acciaio zincato",
+          "ctf su zincato"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0031",
+      "family": "CTF",
+      "domanda": "Ho lamiera bugnata molto alta, quale CTF scelgo?",
+      "risposta": "Scegli il CTF con altezza maggiore così il dente resta immerso nel cls.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "lamiera bugnata alta",
+          "quanto deve essere alto il ctf",
+          "ctf per lamiera alta"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0032",
+      "family": "CTF",
+      "domanda": "Perché devo mettere la rete se ho già i CTF?",
+      "risposta": "Perché la rete tiene insieme il getto e distribuisce le sollecitazioni. I CTF da soli non bastano a evitare fessurazioni.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "perché rete",
+          "serve rete",
+          "non voglio mettere rete"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0033",
+      "family": "CTF",
+      "domanda": "Ho sbagliato altezza CTF, posso lasciare così?",
+      "risposta": "Se il dente non rimane immerso nel cls la collaborazione non è garantita. Meglio sostituire.",
+      "trigger": {
+        "peso": 0.45,
+        "keywords": [
+          "sbagliata altezza",
+          "ctf troppo basso",
+          "ctf troppo alto"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0034",
+      "family": "CTF",
+      "domanda": "È ammessa posa con lamiera arrugginita?",
+      "risposta": "Se la ruggine è superficiale e la lamiera è serrata sì. Se è corrosa chiedere a Tecnaria.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "lamiera arrugginita",
+          "ruggine",
+          "ctf su ruggine"
+        ]
+      }
+    },
+    {
+      "id": "CTF-0035",
+      "family": "CTF",
+      "domanda": "Posso usare un’altra pistola a sparo al posto della P560?",
+      "risposta": "Solo se è equivalente e dichiarata idonea. Altrimenti resta la P560.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "altra pistola",
+          "altra chiodatrice",
+          "non ho p560"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0001",
+      "family": "CTL",
+      "domanda": "Che cosa sono i connettori CTL?",
+      "risposta": "**Contesto**: i CTL sono i connettori Tecnaria per **travi in legno** (anche vecchi solai) che devono collaborare con una **soletta in calcestruzzo**. \n**Posa tipica**: preforo + avvitatura nel legno, poi getto. \n**Uso**: quando vuoi migliorare portata e rigidezza del solaio in legno senza demolire tutto.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "ctl",
+          "connettore per legno",
+          "soletta su legno",
+          "legno collaborante"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0002",
+      "family": "CTL",
+      "domanda": "Quando scelgo CTL e quando CTL MAXI?",
+      "risposta": "Usa **CTL** quando hai travi in legno buone e tavolato adeguato. Usa **CTL MAXI** quando il tavolato è **sottile (2 cm)**, discontinuo o quando la soletta è **più spessa (5–6 cm)** e ti serve più “dente” nel calcestruzzo.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "differenza ctl e ctl maxi",
+          "scelgo ctl o maxi",
+          "tavolato 2 cm"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0003",
+      "family": "CTL",
+      "domanda": "Come si posano i CTL?",
+      "risposta": "1) Tracciare la linea di posa sulla trave in legno; 2) preforare se richiesto; 3) avvitare il CTL fino a completo appoggio; 4) posare rete e armature; 5) gettare. Il legno deve essere **sano e non marcio**.",
+      "trigger": {
+        "peso": 0.8,
+        "keywords": [
+          "posa ctl",
+          "come si montano ctl",
+          "preforo ctl"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0004",
+      "family": "CTL",
+      "domanda": "Posso usare CTL su un tavolato di soli 2 cm?",
+      "risposta": "Si può, ma spesso è preferibile **CTL MAXI** perché ha dente più lungo e lavora meglio con solette da 5 cm. Se usi CTL normale assicurati che il tavolato sia ben inchiodato.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "tavolato 2 cm",
+          "solaio legno sottile",
+          "ctl su tavolato"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0005",
+      "family": "CTL",
+      "domanda": "Che soletta abbino ai CTL?",
+      "risposta": "In genere **5 cm** di cls armato con rete a metà spessore. Se la luce è grande puoi salire.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "spessore soletta ctl",
+          "soletta da quanto",
+          "altezza cls legno"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0006",
+      "family": "CTL",
+      "domanda": "Devo togliere il tavolato esistente per usare i CTL?",
+      "risposta": "No, normalmente il tavolato resta e fa da cassero. È importante che sia **ben collegato alle travi**.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "devo togliere tavolato",
+          "ctl con tavolato esistente",
+          "legno esistente"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0007",
+      "family": "CTL",
+      "domanda": "Se il legno è vecchio posso usare i CTL?",
+      "risposta": "Sì se il legno è sano. Se ci sono parti marce o tarlate vanno sostituite o consolidate prima.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "legno vecchio",
+          "travi vecchie",
+          "connettore su legno vecchio"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0008",
+      "family": "CTL",
+      "domanda": "Quanti CTL per metro quadro?",
+      "risposta": "Dipende dal calcolo. Spesso si lavora con un connettore ogni 15–20 cm sulla trave.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "quanti ctl servono",
+          "passo ctl",
+          "numero connettori legno"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0009",
+      "family": "CTL",
+      "domanda": "Serve rete con i CTL?",
+      "risposta": "Sì, rete elettrosaldata a metà spessore per collegare le zone tra una trave e l’altra.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "rete con ctl",
+          "rete solaio legno",
+          "armatura connettori legno"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0010",
+      "family": "CTL",
+      "domanda": "Il legno deve essere asciutto?",
+      "risposta": "Meglio se non è eccessivamente umido, altrimenti fai preforo e usa viti idonee.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "legno umido",
+          "umidità legno",
+          "ctl su legno umido"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0011",
+      "family": "CTL",
+      "domanda": "Posso usare CTL su legno lamellare?",
+      "risposta": "Sì, CTL funziona anche su lamellare.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "ctl su lamellare",
+          "lamellare con soletta"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0012",
+      "family": "CTL",
+      "domanda": "Che differenza c’è tra CTL e connettori per acciaio?",
+      "risposta": "I CTL sono **per legno** e si avvitano. I CTF sono **per acciaio** e si sparano con P560. Non sono intercambiabili.",
+      "trigger": {
+        "peso": 0.8,
+        "keywords": [
+          "differenza ctl ctf",
+          "ctl o ctf",
+          "legno o acciaio"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0013",
+      "family": "CTL",
+      "domanda": "Posso usare CTL se il tavolato è sconnesso?",
+      "risposta": "Meglio fissare prima il tavolato. In alternativa passa a CTL MAXI.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "tavolato sconnesso",
+          "pavimento irregolare",
+          "ctl maxi"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0014",
+      "family": "CTL",
+      "domanda": "Serve forare prima di avvitare?",
+      "risposta": "Dipende dal tipo di legno e vite. In molti casi si fa **preforo guidato** per non spaccare.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "preforo",
+          "foro guida",
+          "avvitare ctl"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0015",
+      "family": "CTL",
+      "domanda": "Se la soletta è solo 4 cm, il CTL lavora?",
+      "risposta": "Lavora ma sei al limite. Meglio 5 cm.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "soletta 4 cm",
+          "poco cls",
+          "spessore ridotto"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0016",
+      "family": "CTL",
+      "domanda": "Posso abbinare i CTL a travi in acciaio?",
+      "risposta": "No, i CTL sono per legno. Se hai acciaio usa CTF.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "ctl su acciaio",
+          "errore famiglie",
+          "connettore sbagliato"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0017",
+      "family": "CTL",
+      "domanda": "Come riconosco il verso giusto del CTL?",
+      "risposta": "Nella scheda Tecnaria è indicato il verso. In generale il dente va verso la soletta.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "verso ctl",
+          "montaggio ctl",
+          "orientamento"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0018",
+      "family": "CTL",
+      "domanda": "Se il legno è irregolare posso usare dei livellamenti?",
+      "risposta": "Sì, spesso si fa un massetto di ripartizione.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "legno irregolare",
+          "massetto",
+          "livellare prima"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0019",
+      "family": "CTL",
+      "domanda": "I CTL hanno certificazioni?",
+      "risposta": "Sì, Tecnaria fornisce documenti tecnici e prove sperimentali.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "certificazione ctl",
+          "prove ctl"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0020",
+      "family": "CTL",
+      "domanda": "È meglio CTL o viti da carpenteria?",
+      "risposta": "Il CTL è studiato apposta per la collaborazione legno-calcestruzzo, con dente nel cls e avvitamento nel legno. È più controllabile.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "ctl o viti",
+          "differenza con viti",
+          "perché usare ctl"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0021",
+      "family": "CTL",
+      "domanda": "Quanti CTL tengo in magazzino?",
+      "risposta": "Per piccoli cantieri 100–200 pezzi. Per lavori grossi meglio chiedere disponibilità.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "magazzino ctl",
+          "scorta ctl"
+        ]
+      }
+    },
+    {
+      "id": "CTL-0022",
+      "family": "CTL",
+      "domanda": "Se piove posso gettare lo stesso?",
+      "risposta": "Vale la regola del cls: evita getti con acqua eccessiva sul tavolato.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "pioggia",
+          "getto bagnato"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0001",
+      "family": "CTL MAXI",
+      "domanda": "Quando devo usare i connettori CTL MAXI?",
+      "risposta": "Usa **CTL MAXI** quando: (1) il tavolato è molto sottile (2 cm); (2) la soletta è da 5–6 cm; (3) vuoi più dente nel cls; (4) il legno non è perfetto e vuoi più ancoraggio.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "ctl maxi",
+          "versione maxi ctl",
+          "tavolato 2 cm",
+          "soletta 5 cm"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0002",
+      "family": "CTL MAXI",
+      "domanda": "Posso usare CTL MAXI per travi in legno su tavolato 2 cm e soletta 5 cm?",
+      "risposta": "Sì, è proprio il caso tipico: trave legno + tavolato 2 cm + soletta 5 cm → **CTL MAXI**.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "travi legno tavolato 2 cm soletta 5 cm",
+          "quale modello usare",
+          "connettori tecnaria maxi"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0003",
+      "family": "CTL MAXI",
+      "domanda": "Come si posa il CTL MAXI?",
+      "risposta": "Si posa come il CTL: preforo se serve, avvitatura profonda, controllo di stabilità e poi getto.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "posa ctl maxi",
+          "montaggio ctl maxi"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0004",
+      "family": "CTL MAXI",
+      "domanda": "Il CTL MAXI ha codici diversi dal CTL?",
+      "risposta": "Sì, in listino ci sono codici specifici per la versione MAXI con lunghezza/dente maggiore.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "codici ctl maxi",
+          "listino ctl maxi"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0005",
+      "family": "CTL MAXI",
+      "domanda": "Se sbaglio e metto CTL normale al posto di CTL MAXI?",
+      "risposta": "Se la soletta è 5 cm e il tavolato è 2 cm, il CTL normale potrebbe non avere abbastanza dente. Valuta integrazione o sostituzione.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "ho messo ctl al posto di maxi",
+          "errore connettore legno"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0006",
+      "family": "CTL MAXI",
+      "domanda": "Posso usare CTL MAXI anche su tavolati spessi?",
+      "risposta": "Sì, ma spesso basta il CTL normale. Il MAXI è per casi più critici.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "tavolato spesso",
+          "ctl maxi su tavolato spesso"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0007",
+      "family": "CTL MAXI",
+      "domanda": "Ci sono istruzioni di posa particolari per CTL MAXI?",
+      "risposta": "Solo attenzione alla **verticalità in avvitatura** e alla **profondità reale nel legno**.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "istruzioni posa ctl maxi",
+          "profondità avvitatura"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0008",
+      "family": "CTL MAXI",
+      "domanda": "Il CTL MAXI va bene per travi irregolari?",
+      "risposta": "Sì, proprio perché ha più dente riesce a lavorare anche se il piano non è perfettissimo.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "travi irregolari",
+          "solaio non piano"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0009",
+      "family": "CTL MAXI",
+      "domanda": "Quanti CTL MAXI per trave?",
+      "risposta": "Come CTL: passo 15–20 cm salvo diversa indicazione.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "quanti ctl maxi",
+          "passo ctl maxi"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0010",
+      "family": "CTL MAXI",
+      "domanda": "Serve sempre la rete?",
+      "risposta": "Sì, rete a metà spessore anche con CTL MAXI.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "rete con ctl maxi",
+          "armatura soletta legno"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0011",
+      "family": "CTL MAXI",
+      "domanda": "Posso usare CTL MAXI su legno lamellare?",
+      "risposta": "Sì.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "ctl maxi lamellare"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0012",
+      "family": "CTL MAXI",
+      "domanda": "Il CTL MAXI costa di più?",
+      "risposta": "Sì, perché è più grande e più performante.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "costo ctl maxi",
+          "più caro"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0013",
+      "family": "CTL MAXI",
+      "domanda": "Come lo ordino?",
+      "risposta": "Indica sempre che è la versione **MAXI** e la quantità.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "ordinare ctl maxi"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0014",
+      "family": "CTL MAXI",
+      "domanda": "Posso alternare CTL e CTL MAXI nella stessa trave?",
+      "risposta": "Meglio di no: tieni omogenea la trave.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "misto ctl e maxi",
+          "alternare connettori"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0015",
+      "family": "CTL MAXI",
+      "domanda": "Che differenza c’è con i connettori per laterocemento?",
+      "risposta": "Questi lavorano su **legno**. I connettori per laterocemento (CTCEM/VCEM) lavorano su **solai in laterizio e calcestruzzo**.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "differenza con vcem",
+          "differenza con ctcem"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0016",
+      "family": "CTL MAXI",
+      "domanda": "Serve CLS C25/30 anche qui?",
+      "risposta": "Sì, vale la stessa raccomandazione.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "cls ctl maxi"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0017",
+      "family": "CTL MAXI",
+      "domanda": "Va bene per solai molto deformabili?",
+      "risposta": "Sì, migliora molto la rigidezza.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "solaio deformabile",
+          "rigidire solaio legno"
+        ]
+      }
+    },
+    {
+      "id": "CTLX-0018",
+      "family": "CTL MAXI",
+      "domanda": "Posso usarlo su solaio con tavelle?",
+      "risposta": "Se sotto hai legno sì; se sei su laterocemento vai su CTCEM/VCEM.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "tavelle",
+          "misto legno tavella"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0001",
+      "family": "CTCEM",
+      "domanda": "Che cosa sono i CTCEM?",
+      "risposta": "I **CTCEM** sono connettori Tecnaria per **solai in laterocemento** che devono diventare collaboranti con una soletta. Si fissano per **foratura e avvitatura** (non a sparo). Sono la “versione per laterizio” dei collegamenti.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "ctcem",
+          "connettori per laterocemento",
+          "soletta su laterizio"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0002",
+      "family": "CTCEM",
+      "domanda": "Come si posano i CTCEM?",
+      "risposta": "Si fa il foro nel travetto/soletta esistente, si inserisce il connettore e si fissa con vite/autofilettante secondo schema Tecnaria. Poi si getta.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "posa ctcem",
+          "foro e avvitare",
+          "connettore su travetto"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0003",
+      "family": "CTCEM",
+      "domanda": "Quando scelgo CTCEM e quando VCEM?",
+      "risposta": "Sono entrambe soluzioni per laterocemento. **VCEM** è spesso usato quando c’è da vite-vite e fissaggio più “verticale”; **CTCEM** quando hai travetti e vuoi un dente più definito. In tanti casi sono intercambiabili ma verifica la scheda.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "differenza ctcem vcem",
+          "ctcem o vcem",
+          "laterocemento quale"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0004",
+      "family": "CTCEM",
+      "domanda": "Posso usare la P560 sui CTCEM?",
+      "risposta": "No. P560 è solo per CTF su acciaio. CTCEM si fora e si avvita.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "p560 su ctcem",
+          "sparare ctcem",
+          "errore ctcem"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0005",
+      "family": "CTCEM",
+      "domanda": "Serve la rete anche su laterocemento?",
+      "risposta": "Sì, rete a metà spessore anche qui.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "rete laterocemento",
+          "armatura ctcem"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0006",
+      "family": "CTCEM",
+      "domanda": "Se il travetto è ammalorato posso usare lo stesso il CTCEM?",
+      "risposta": "Meglio ripristinare prima il travetto.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "travetto rovinato",
+          "ammalorato",
+          "ctcem su travetto rotto"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0007",
+      "family": "CTCEM",
+      "domanda": "Quanti CTCEM per metro?",
+      "risposta": "Di solito uno ogni 15–20 cm ma dipende dal calcolo.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "passo ctcem",
+          "quanti connettori laterocemento"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0008",
+      "family": "CTCEM",
+      "domanda": "Se sbaglio e non metto la vite?",
+      "risposta": "Il connettore non è ancorato. Va rifatto.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "non ho messo vite",
+          "dimenticato fissaggio"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0009",
+      "family": "CTCEM",
+      "domanda": "Quale calcestruzzo uso?",
+      "risposta": "Cls C25/30 anche qui.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "cls ctcem",
+          "calcestruzzo laterocemento"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0010",
+      "family": "CTCEM",
+      "domanda": "Posso usare CTCEM su solaio a voltine?",
+      "risposta": "Serve valutazione tecnica, ma spesso si usano i VCEM in questi casi.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "voltine",
+          "voltone",
+          "solaio a volta"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0011",
+      "family": "CTCEM",
+      "domanda": "Come lo ordino?",
+      "risposta": "Come CTCEM + vite abbinata.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "ordinare ctcem"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0012",
+      "family": "CTCEM",
+      "domanda": "Come faccio a non rompere il travetto?",
+      "risposta": "Usa punta e diametro indicati.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "rompere travetto",
+          "foro giusto"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0013",
+      "family": "CTCEM",
+      "domanda": "Posso usare CTCEM su laterizio forato?",
+      "risposta": "Sì, ma è meglio agganciarsi alla parte resistente.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "laterizio forato",
+          "forato",
+          "fori"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0014",
+      "family": "CTCEM",
+      "domanda": "Serve protezione anticaduta per la posa?",
+      "risposta": "Sì, è sempre posa in quota.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "sicurezza ctcem"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0015",
+      "family": "CTCEM",
+      "domanda": "Le polveri di foratura sono un problema?",
+      "risposta": "Sì, pulisci prima di avvitare.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "polveri",
+          "pulizia foro"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0016",
+      "family": "CTCEM",
+      "domanda": "C’è un tempo massimo tra posa e getto?",
+      "risposta": "Meglio gettare in tempi brevi.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "tempo tra posa e getto"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0017",
+      "family": "CTCEM",
+      "domanda": "Il CTCEM è compatibile con reti esistenti?",
+      "risposta": "Sì, basta che la rete nuova leghi tutto.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "rete esistente",
+          "compatibilità"
+        ]
+      }
+    },
+    {
+      "id": "CTCEM-0018",
+      "family": "CTCEM",
+      "domanda": "Posso usarlo con solaio in c.a. pieno?",
+      "risposta": "Se è pieno puoi ancorarti direttamente, ma spesso non serve connettore.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "solaio pieno",
+          "calcestruzzo pieno"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0001",
+      "family": "VCEM",
+      "domanda": "Che cosa sono i VCEM?",
+      "risposta": "I **VCEM** sono connettori per **solai in laterocemento** o in **calcestruzzo alleggerito** dove si vuole realizzare collaborazione con la soletta. Si fissano con **foro e vite**, non con P560.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "vcem",
+          "connettori per solaio latero",
+          "laterocemento vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0002",
+      "family": "VCEM",
+      "domanda": "La P560 la posso usare per posare i VCEM?",
+      "risposta": "No, la P560 è solo per CTF su acciaio. Per VCEM fai **foro + vite**. Usare P560 sui VCEM è uno degli errori più frequenti e va corretto.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "p560 su vcem",
+          "sparare vcem",
+          "chiodo su vcem",
+          "errore posa vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0003",
+      "family": "VCEM",
+      "domanda": "Se per errore ho messo un chiodo su un VCEM cosa faccio?",
+      "risposta": "Rimuovi il chiodo, ripristina il punto (malta, stucco, ripresa), fora correttamente e posa il VCEM con la sua vite. Segna l’errore.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "chiodo su vcem",
+          "errore chiodo",
+          "p560 vcem",
+          "sparo sbagliato"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0004",
+      "family": "VCEM",
+      "domanda": "Qual è la differenza tra VCEM e CTCEM?",
+      "risposta": "Sono entrambi per laterocemento. Il VCEM è spesso più semplice da fissare in verticale, il CTCEM è più ‘connettore’ con forma specifica. L’ufficio tecnico può dire quale preferire.",
+      "trigger": {
+        "peso": 0.85,
+        "keywords": [
+          "differenza vcem ctcem",
+          "quale scelgo",
+          "ctcem vs vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0005",
+      "family": "VCEM",
+      "domanda": "Che spessore di soletta abbino ai VCEM?",
+      "risposta": "Soletta collaborante 5–6 cm con rete a metà.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "soletta vcem",
+          "spessore vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0006",
+      "family": "VCEM",
+      "domanda": "I VCEM hanno codici diversi secondo l’altezza?",
+      "risposta": "Sì, in listino ci sono varianti secondo l’altezza e l’uso.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "codici vcem",
+          "listino vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0007",
+      "family": "VCEM",
+      "domanda": "Su solaio con tavelle vecchie posso usare i VCEM?",
+      "risposta": "Sì, è uno dei casi tipici: travetto + tavella + soletta → VCEM.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "tavelle vecchie",
+          "solaio con tavella"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0008",
+      "family": "VCEM",
+      "domanda": "Come foro per i VCEM?",
+      "risposta": "Usa punta e diametro indicato da Tecnaria per garantire presa.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "foro vcem",
+          "punta vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0009",
+      "family": "VCEM",
+      "domanda": "Quanti VCEM devo mettere?",
+      "risposta": "Uno ogni 15–20 cm di solito, ma dipende dal calcolo.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "passo vcem",
+          "quanti vcem servono"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0010",
+      "family": "VCEM",
+      "domanda": "Posso usarli su laterizio forato?",
+      "risposta": "Sì, ma devi agganciarti alla parte resistente.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "laterizio forato vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0011",
+      "family": "VCEM",
+      "domanda": "Ci sono problemi di distacco se non pulisco il foro?",
+      "risposta": "Sì, è sempre meglio pulire e poi avvitare.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "pulizia foro vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0012",
+      "family": "VCEM",
+      "domanda": "Posso combinare VCEM e CTF nello stesso solaio?",
+      "risposta": "Sì, ma devi tenere distinti i due metodi di posa: dove c’è acciaio → CTF con P560; dove c’è laterocemento → VCEM/CTCEM con foro + vite. Attenzione a non scambiare i sistemi (errore chiodo su vcem).",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "misto vcem e ctf",
+          "due sistemi",
+          "errore posa mista"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0013",
+      "family": "VCEM",
+      "domanda": "Il VCEM è compatibile con lamiera grecata?",
+      "risposta": "Di norma il VCEM è per laterocemento. Se hai lamiera vai su CTF.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "vcem su lamiera",
+          "lamiera grecata"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0014",
+      "family": "VCEM",
+      "domanda": "Serve rete anche qui?",
+      "risposta": "Sì, come per CTCEM.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "rete per vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0015",
+      "family": "VCEM",
+      "domanda": "Il VCEM ha documentazione ETA?",
+      "risposta": "Tecnaria può fornire la documentazione su richiesta.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "eta vcem",
+          "certificazione vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0016",
+      "family": "VCEM",
+      "domanda": "Posso usare VCEM su solaio prefabbricato?",
+      "risposta": "Serve valutazione, ma spesso sì se il travetto è in c.a.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "solaio prefabbricato vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0017",
+      "family": "VCEM",
+      "domanda": "Posso fare la posa io o serve impresa?",
+      "risposta": "La può fare impresa istruita. Va rispettato foro e vite.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "chi può posare vcem"
+        ]
+      }
+    },
+    {
+      "id": "VCEM-0018",
+      "family": "VCEM",
+      "domanda": "Se non arrivo col trapano?",
+      "risposta": "Usa trapani compatti o cambia punto di posa.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "non riesco a forare",
+          "spazio ridotto"
+        ]
+      }
+    },
+    {
+      "id": "P560-0001",
+      "family": "P560",
+      "domanda": "Che cos’è la SPIT P560?",
+      "risposta": "È la chiodatrice a sparo che Tecnaria usa per fissare i **connettori CTF** su travi in acciaio con lamiera grecata. Lavora con propulsori e con chiodi **HSBR14**.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "p560",
+          "spit p560",
+          "chiodatrice tecnaria",
+          "sparo connettori"
+        ]
+      }
+    },
+    {
+      "id": "P560-0002",
+      "family": "P560",
+      "domanda": "Che chiodi devo usare con la P560 per i CTF?",
+      "risposta": "Usa **2 chiodi HSBR14 per ogni connettore CTF**.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "chiodi hsbr14",
+          "2 chiodi per connettore",
+          "p560 chiodi"
+        ]
+      }
+    },
+    {
+      "id": "P560-0003",
+      "family": "P560",
+      "domanda": "Posso usare la P560 sui VCEM?",
+      "risposta": "No. P560 → solo CTF su acciaio.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "p560 vcem",
+          "sparo su vcem",
+          "errore p560"
+        ]
+      }
+    },
+    {
+      "id": "P560-0004",
+      "family": "P560",
+      "domanda": "Quante prove devo fare prima di iniziare?",
+      "risposta": "2–3 tiri di prova per tarare potenza e verificare la posa.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "prove p560",
+          "taratura",
+          "test sparo"
+        ]
+      }
+    },
+    {
+      "id": "P560-0005",
+      "family": "P560",
+      "domanda": "Posso noleggiare la P560?",
+      "risposta": "Sì, di solito sì. Va chiesto al commerciale.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "noleggio p560"
+        ]
+      }
+    },
+    {
+      "id": "P560-0006",
+      "family": "P560",
+      "domanda": "Serve DPI particolari con la P560?",
+      "risposta": "Sì: occhiali, guanti e protezione udito.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "dpi p560"
+        ]
+      }
+    },
+    {
+      "id": "P560-0007",
+      "family": "P560",
+      "domanda": "Se il chiodo non va a fondo cosa faccio?",
+      "risposta": "Controlla serraggio lamiera e potenza. Rifai lo sparo.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "chiodo non entra p560",
+          "colpo corto"
+        ]
+      }
+    },
+    {
+      "id": "P560-0008",
+      "family": "P560",
+      "domanda": "La P560 è obbligatoria sulle travi in acciaio?",
+      "risposta": "Per i CTF sì.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "obbligatoria p560",
+          "ctf senza p560"
+        ]
+      }
+    },
+    {
+      "id": "P560-0009",
+      "family": "P560",
+      "domanda": "Ogni connettore vuole due colpi?",
+      "risposta": "Sì, 2 chiodi HSBR14.",
+      "trigger": {
+        "peso": 0.85,
+        "keywords": [
+          "due colpi p560",
+          "due chiodi"
+        ]
+      }
+    },
+    {
+      "id": "P560-0010",
+      "family": "P560",
+      "domanda": "La posso usare su lamiera non serrata?",
+      "risposta": "Meglio di no, prima serra.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "p560 lamiera non serrata"
+        ]
+      }
+    },
+    {
+      "id": "P560-0011",
+      "family": "P560",
+      "domanda": "Che manutenzione devo fare?",
+      "risposta": "Pulizia ordinaria e controllo propulsori.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "manutenzione p560"
+        ]
+      }
+    },
+    {
+      "id": "P560-0012",
+      "family": "P560",
+      "domanda": "La P560 è compatibile con tutte le altezze CTF?",
+      "risposta": "Sì, l’importante è la lamiera serrata.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "p560 con ctf alti"
+        ]
+      }
+    },
+    {
+      "id": "P560-0013",
+      "family": "P560",
+      "domanda": "Devo registrare la posa?",
+      "risposta": "Sì, è buona prassi scrivere macchina e lotto chiodi.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "verbale p560",
+          "registro posa"
+        ]
+      }
+    },
+    {
+      "id": "P560-0014",
+      "family": "P560",
+      "domanda": "Posso usarla per fissare lamiera?",
+      "risposta": "Meglio fissare la lamiera con sistemi dedicati e poi posare i CTF.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "p560 per lamiera",
+          "fissare lamiera"
+        ]
+      }
+    },
+    {
+      "id": "P560-0015",
+      "family": "P560",
+      "domanda": "Posso usarla su ponteggi?",
+      "risposta": "Solo in sicurezza.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "p560 ponteggi"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0001",
+      "family": "DIAPASON",
+      "domanda": "Che cosa è la linea Diapason?",
+      "risposta": "È una linea Tecnaria di **piastre e sistemi di rinforzo** per collegare elementi strutturali.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "diapason",
+          "linea diapason",
+          "piastre tecnaria"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0002",
+      "family": "DIAPASON",
+      "domanda": "Posso usare Diapason con i connettori?",
+      "risposta": "Sì, sono soluzioni complementari.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "diapason con ctf",
+          "diapason con ctl"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0003",
+      "family": "DIAPASON",
+      "domanda": "Serve progetto per usare Diapason?",
+      "risposta": "Sì, è meglio avere indicazioni tecniche.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "progetto diapason"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0004",
+      "family": "DIAPASON",
+      "domanda": "Dove trovo i codici Diapason?",
+      "risposta": "Nel catalogo Tecnaria.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "codici diapason"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0005",
+      "family": "DIAPASON",
+      "domanda": "È per legno o per acciaio?",
+      "risposta": "Può lavorare con entrambi in funzione del modello.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "diapason legno",
+          "diapason acciaio"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0006",
+      "family": "DIAPASON",
+      "domanda": "Posso ordinarlo insieme ai connettori?",
+      "risposta": "Sì.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "ordinare diapason"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0007",
+      "family": "DIAPASON",
+      "domanda": "Diapason è certificato?",
+      "risposta": "Tecnaria fornisce la documentazione.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "certificato diapason"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0008",
+      "family": "DIAPASON",
+      "domanda": "Posso usarlo su solai esistenti?",
+      "risposta": "Sì.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "diapason solai esistenti"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0009",
+      "family": "DIAPASON",
+      "domanda": "È compatibile con getti collaboranti?",
+      "risposta": "Sì.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "diapason con soletta"
+        ]
+      }
+    },
+    {
+      "id": "DIA-0010",
+      "family": "DIAPASON",
+      "domanda": "Serve posa specializzata?",
+      "risposta": "Meglio se l’impresa è formata.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "posa diapason"
+        ]
+      }
+    },
+    {
+      "id": "GTS-0001",
+      "family": "GTS",
+      "domanda": "Che cosa è la famiglia GTS?",
+      "risposta": "È una famiglia di collegamenti Tecnaria per **giunzioni trave-solaio** e connessioni particolari.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "gts",
+          "collegamenti gts",
+          "trave solaio gts"
+        ]
+      }
+    },
+    {
+      "id": "GTS-0002",
+      "family": "GTS",
+      "domanda": "Posso usare GTS con CTF?",
+      "risposta": "Sì, se nel progetto servono entrambi.",
+      "trigger": {
+        "peso": 0.35,
+        "keywords": [
+          "gts con ctf"
+        ]
+      }
+    },
+    {
+      "id": "GTS-0003",
+      "family": "GTS",
+      "domanda": "Dove trovo le schede GTS?",
+      "risposta": "Nel sito Tecnaria o nel catalogo.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "schede gts"
+        ]
+      }
+    },
+    {
+      "id": "GTS-0004",
+      "family": "GTS",
+      "domanda": "Serve rete anche con GTS?",
+      "risposta": "Dipende dal tipo di getto.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "rete gts"
+        ]
+      }
+    },
+    {
+      "id": "GTS-0005",
+      "family": "GTS",
+      "domanda": "La famiglia GTS è compatibile con NLM?",
+      "risposta": "Sì, la trattiamo come le altre famiglie.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "gts nlm"
+        ]
+      }
+    },
+    {
+      "id": "GTS-0006",
+      "family": "GTS",
+      "domanda": "Posso ordinarli insieme agli accessori?",
+      "risposta": "Sì.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "ordine gts"
+        ]
+      }
+    },
+    {
+      "id": "GTS-0007",
+      "family": "GTS",
+      "domanda": "Serve indicare il tipo di trave?",
+      "risposta": "Sì, indica se è acciaio o legno.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "gts trave acciaio",
+          "gts legno"
+        ]
+      }
+    },
+    {
+      "id": "GTS-0008",
+      "family": "GTS",
+      "domanda": "Posso usare GTS su solai leggeri?",
+      "risposta": "Serve vedere la scheda.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "gts solai leggeri"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0001",
+      "family": "ACCESSORI",
+      "domanda": "Quali accessori ci sono per i connettori?",
+      "risposta": "Chiodi HSBR14 per CTF, adattatori P560, punte per forare laterocemento, staffe di serraggio lamiera.",
+      "trigger": {
+        "peso": 0.5,
+        "keywords": [
+          "accessori connettori",
+          "hsbr14",
+          "adattatori p560"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0002",
+      "family": "ACCESSORI",
+      "domanda": "Posso comprare solo i chiodi?",
+      "risposta": "Sì, ma specifica che sono per P560 e CTF.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "comprare chiodi",
+          "solo chiodi",
+          "hsbr14 ricambio"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0003",
+      "family": "ACCESSORI",
+      "domanda": "C’è un kit per serraggio lamiera?",
+      "risposta": "Sì, esistono accessori per bloccare la lamiera prima dello sparo.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "serrare lamiera",
+          "kit serraggio"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0004",
+      "family": "ACCESSORI",
+      "domanda": "Posso ordinare le punte con i VCEM?",
+      "risposta": "Sì, conviene.",
+      "trigger": {
+        "peso": 0.25,
+        "keywords": [
+          "punte vcem",
+          "accessori vcem"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0005",
+      "family": "ACCESSORI",
+      "domanda": "Ci sono rondelle o piastre?",
+      "risposta": "Sì, in gamma accessori.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "rondelle",
+          "piastre"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0006",
+      "family": "ACCESSORI",
+      "domanda": "Gli accessori sono a magazzino?",
+      "risposta": "Spesso sì, ma verifica disponibilità.",
+      "trigger": {
+        "peso": 0.2,
+        "keywords": [
+          "magazzino accessori"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0007",
+      "family": "ACCESSORI",
+      "domanda": "Serve DPI extra?",
+      "risposta": "Vale quanto per i connettori.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "dpi accessori"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0008",
+      "family": "ACCESSORI",
+      "domanda": "Posso avere tutto in un unico pallet?",
+      "risposta": "Sì, specificalo nell’ordine.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "pallet unico",
+          "spedizione unica"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0009",
+      "family": "ACCESSORI",
+      "domanda": "Gli accessori valgono per tutte le famiglie?",
+      "risposta": "Alcuni sì (punte), altri sono specifici.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "accessori comuni"
+        ]
+      }
+    },
+    {
+      "id": "ACC-0010",
+      "family": "ACCESSORI",
+      "domanda": "Esiste un kit prova cantiere?",
+      "risposta": "Sì, puoi chiedere un set ridotto.",
+      "trigger": {
+        "peso": 0.15,
+        "keywords": [
+          "kit prova",
+          "campione"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0001",
+      "family": "CONFRONTO",
+      "domanda": "Differenza tra CTF e CTL?",
+      "risposta": "**CTF** → acciaio + lamiera + P560 + 2 chiodi.\n**CTL** → legno + avvitatura + soletta. \nNon sono intercambiabili.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "differenza ctf ctl",
+          "ctf o ctl",
+          "acciaio o legno"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0002",
+      "family": "CONFRONTO",
+      "domanda": "Differenza tra CTL e CTL MAXI?",
+      "risposta": "CTL MAXI ha dente più lungo per tavolati sottili e solette da 5 cm.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "ctl vs ctl maxi",
+          "differenza ctl maxi"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0003",
+      "family": "CONFRONTO",
+      "domanda": "Differenza tra CTCEM e VCEM?",
+      "risposta": "Entrambi per laterocemento; CTCEM più ‘connettore’, VCEM più ‘vite su travetto’.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "ctcem vs vcem",
+          "confronto vcem ctcem"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0004",
+      "family": "CONFRONTO",
+      "domanda": "Posso sostituire un CTF con un VCEM?",
+      "risposta": "No, sono per supporti diversi.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "sostituire ctf con vcem"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0005",
+      "family": "CONFRONTO",
+      "domanda": "Meglio P560 o avvitatura?",
+      "risposta": "Dipende dal supporto: acciaio → P560; laterocemento → avvitatura.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "p560 o avvitare"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0006",
+      "family": "CONFRONTO",
+      "domanda": "Quale uso su trave in acciaio con lamiera?",
+      "risposta": "CTF con P560.",
+      "trigger": {
+        "peso": 0.85,
+        "keywords": [
+          "trave acciaio lamiera",
+          "che connettore su lamiera"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0007",
+      "family": "CONFRONTO",
+      "domanda": "Quale uso su travi in legno con tavolato sottile?",
+      "risposta": "CTL MAXI.",
+      "trigger": {
+        "peso": 0.85,
+        "keywords": [
+          "travi legno tavolato sottile"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0008",
+      "family": "CONFRONTO",
+      "domanda": "Quale uso su solaio in laterocemento vecchio?",
+      "risposta": "VCEM o CTCEM.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "solaio vecchio laterocemento"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0009",
+      "family": "CONFRONTO",
+      "domanda": "Posso fare una soluzione mista?",
+      "risposta": "Sì, ma attenzione a non confondere i metodi di posa.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "soluzione mista",
+          "misto ctf vcem"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0010",
+      "family": "CONFRONTO",
+      "domanda": "Perché ChatGPT risponde sempre e il mio bot no?",
+      "risposta": "Perché ChatGPT ha **generalizzazione semantica**. Il tuo file JSON invece risponde **solo se trova una frase o una keyword che hai messo tu**. Per arrivare vicino a ChatGPT devi avere: (1) tante formulazioni diverse della stessa domanda; (2) trigger larghi con sinonimi e forme sgrammaticate; (3) un fallback di famiglia (‘se vedo parola CTF → risposta CTF base’). Questo file è già fatto così.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "perché chatgpt risponde sempre",
+          "il mio bot non risponde",
+          "nlm puro",
+          "risposte mancanti"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0011",
+      "family": "CONFRONTO",
+      "domanda": "Come faccio lo stress test del file?",
+      "risposta": "Invia 50–100 domande sporche con errori (‘ho sparato vcem’, ‘ctf lamiera non stretta’, ‘quale conn max legno’). Se più del 70% va in famiglia giusta, il file è ok.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "stress test",
+          "test file",
+          "provare bot"
+        ]
+      }
+    },
+    {
+      "id": "CONF-0012",
+      "family": "CONFRONTO",
+      "domanda": "Posso avere risposte in francese?",
+      "risposta": "Sì, traduzione runtime.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "francese",
+          "inglese"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0001",
+      "family": "PROBLEMATICHE",
+      "domanda": "Ho messo un chiodo su un VCEM: errore.",
+      "risposta": "È un errore comune. Rimuovi, ripristina e posa il VCEM correttamente.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "chiodo su vcem",
+          "errore vcem",
+          "p560 su vcem"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0002",
+      "family": "PROBLEMATICHE",
+      "domanda": "La lamiera si muove quando sparo i CTF.",
+      "risposta": "Blocca la lamiera con fissaggi preliminari, poi spara.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "lamiera si muove",
+          "rimbalzo lamiera"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0003",
+      "family": "PROBLEMATICHE",
+      "domanda": "Il chiodo non entra del tutto.",
+      "risposta": "Aumenta potenza, controlla serraggio, ripeti sparo.",
+      "trigger": {
+        "peso": 0.8,
+        "keywords": [
+          "chiodo non entra",
+          "colpo corto",
+          "p560 non buca"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0004",
+      "family": "PROBLEMATICHE",
+      "domanda": "Ho confuso CTF e VCEM sul cantiere.",
+      "risposta": "Riconosci i supporti: acciaio → CTF; laterocemento → VCEM/CTCEM.",
+      "trigger": {
+        "peso": 0.8,
+        "keywords": [
+          "confuso ctf vcem",
+          "scambiato connettori"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0005",
+      "family": "PROBLEMATICHE",
+      "domanda": "Il mio JSON dà extra data.",
+      "risposta": "Hai messo due oggetti root o una virgola in più. Tieni un solo `_meta` e un solo `items`.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "extra data",
+          "jsondecodeerror",
+          "line 912",
+          "render 503"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0006",
+      "family": "PROBLEMATICHE",
+      "domanda": "La mia app risponde sempre con la sede Tecnaria.",
+      "risposta": "Succede quando il matching non trova meglio. Aumenta i trigger specifici (ctf, ctl, vcem...) e mettili prima.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "risponde sempre con sede",
+          "sempre la stessa risposta"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0007",
+      "family": "PROBLEMATICHE",
+      "domanda": "La domanda è sgrammaticata, risponde lo stesso?",
+      "risposta": "Con i trigger larghi sì: abbiamo messo forme come ‘ho sparato vcem’, ‘lamiera non serrata’, ‘p560 su vcem’.",
+      "trigger": {
+        "peso": 0.7,
+        "keywords": [
+          "domanda sgrammaticata",
+          "nlm sporco",
+          "linguaggio naturale"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0008",
+      "family": "PROBLEMATICHE",
+      "domanda": "Il cantiere vuole vedere istruzioni in pdf.",
+      "risposta": "Rimandi al sito Tecnaria per le schede ufficiali.",
+      "trigger": {
+        "peso": 0.3,
+        "keywords": [
+          "pdf",
+          "schede tecnaria"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0009",
+      "family": "PROBLEMATICHE",
+      "domanda": "Ho sbagliato a forare il laterocemento.",
+      "risposta": "Ripristina il foro e rifai con la punta giusta.",
+      "trigger": {
+        "peso": 0.4,
+        "keywords": [
+          "sbagliato foro",
+          "foro grande"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0010",
+      "family": "PROBLEMATICHE",
+      "domanda": "Ho travi in acciaio e campata in laterocemento, che connettori uso?",
+      "risposta": "Acciaio → CTF; laterocemento → VCEM/CTCEM. Se il solaio è misto puoi avere entrambe le famiglie nello stesso file.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "travi acciaio e campata laterocemento",
+          "misto acciaio latero"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0011",
+      "family": "PROBLEMATICHE",
+      "domanda": "La mia interfaccia non carica le domande, perché?",
+      "risposta": "Perché l’app non riesce a fare il parse del JSON. Controlla virgole, parantesi e che l’array items sia chiuso.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "interfaccia non carica",
+          "503 interfaccia",
+          "non vedo domande"
+        ]
+      }
+    },
+    {
+      "id": "PROB-0012",
+      "family": "PROBLEMATICHE",
+      "domanda": "Posso ridurre il file?",
+      "risposta": "Meglio no: più domande hai, più intercetti il linguaggio naturale.",
+      "trigger": {
+        "peso": 0.6,
+        "keywords": [
+          "ridurre file",
+          "file grande"
+        ]
+      }
+    },
+    {
+      "id": "KILL-0001",
+      "family": "KILLER",
+      "domanda": "Ho sparato un VCEM.",
+      "risposta": "Non si spara un VCEM. Si fora e si avvita. Rimuovi e ripristina.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "ho sparato vcem",
+          "sparato il vcem",
+          "sparo su vcem"
+        ]
+      }
+    },
+    {
+      "id": "KILL-0002",
+      "family": "KILLER",
+      "domanda": "Ho messo un chiodo nel posto sbagliato.",
+      "risposta": "Se non è su acciaio/CTF è errore: togli, ripristina e posa giusto.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "chiodo posto sbagliato",
+          "errore di posa"
+        ]
+      }
+    },
+    {
+      "id": "KILL-0003",
+      "family": "KILLER",
+      "domanda": "Ho lamiera non serrata e devo finire oggi.",
+      "risposta": "Serra la lamiera, anche con 2–3 fissaggi provvisori, poi usa P560.",
+      "trigger": {
+        "peso": 0.8,
+        "keywords": [
+          "devo finire oggi",
+          "lamiera lenta"
+        ]
+      }
+    },
+    {
+      "id": "KILL-0004",
+      "family": "KILLER",
+      "domanda": "Mi dai subito i codici CTF?",
+      "risposta": "CTF 60/15, CTF 80/15, CTF 100/20 come altezze tipiche. Per ordine reale vedi listino Tecnaria.",
+      "trigger": {
+        "peso": 0.95,
+        "keywords": [
+          "subito codici ctf",
+          "codice ctf",
+          "ctf 60 80 100"
+        ]
+      }
+    },
+    {
+      "id": "KILL-0005",
+      "family": "KILLER",
+      "domanda": "Quanti chiodi devo usare?",
+      "risposta": "2 chiodi HSBR14 per ogni CTF.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "quanti chiodi",
+          "2 chiodi",
+          "hsbr14"
+        ]
+      }
+    },
+    {
+      "id": "KILL-0006",
+      "family": "KILLER",
+      "domanda": "Perché non risponde come ChatGPT?",
+      "risposta": "Perché ChatGPT ha modello semantico, il tuo file è a matching. Qui abbiamo messo più formulazioni per simulare NLM.",
+      "trigger": {
+        "peso": 1.0,
+        "keywords": [
+          "perché non risponde come chatgpt",
+          "risposta del cazzo",
+          "non trova la risposta"
+        ]
+      }
+    },
+    {
+      "id": "KILL-0007",
+      "family": "KILLER",
+      "domanda": "Quanta minestra deve mangiare uno che posa i CTF?",
+      "risposta": "😄 In cantiere serve più attenzione che minestra: lamiera serrata, P560 tarata, 2 chiodi HSBR14, rete a metà spessore e cls C25/30. Se fai queste 5 cose la posa è fatta bene anche se la domanda è strana.",
+      "trigger": {
+        "peso": 0.9,
+        "keywords": [
+          "minestra cantiere",
+          "domande assurde",
+          "ctf strano"
+        ]
+      }
+    }
+  ]
+}

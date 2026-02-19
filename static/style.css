@@ -1,0 +1,32 @@
+let mode = "gold";
+
+document.getElementById("goldBtn").addEventListener("click", () => {
+    mode = "gold";
+    document.getElementById("goldBtn").classList.add("active");
+    document.getElementById("furbaBtn").classList.remove("active");
+});
+
+document.getElementById("furbaBtn").addEventListener("click", () => {
+    mode = "furba";
+    document.getElementById("furbaBtn").classList.add("active");
+    document.getElementById("goldBtn").classList.remove("active");
+});
+
+
+document.getElementById("sendBtn").addEventListener("click", async () => {
+    const question = document.getElementById("question").value.trim();
+    if (!question) return;
+
+    const endpoint = mode === "gold" ? "/api/ask" : "/api/ask_furba";
+
+    const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question })
+    });
+
+    const data = await res.json();
+
+    document.getElementById("answerBox").textContent = data.answer || "—";
+    document.getElementById("metaBox").textContent = JSON.stringify(data.meta, null, 2);
+});
